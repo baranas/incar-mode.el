@@ -1,0 +1,2661 @@
+{
+    "ADDGRID": {
+        "type": "bool",
+        "description": "ADDGRID determines whether an additional support grid is used for the evaluation of the augmentation charges.",
+        "url": "https://www.vasp.at/wiki/index.php/ADDGRID"
+    },
+    "AEXX": {
+        "type": "float",
+        "description": "AEXX specifies the fraction of exact exchange in a Hartree-Fock-type/hybrid-functional calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/AEXX"
+    },
+    "AGGAC": {
+        "type": "float",
+        "description": "AGGAC specifies the fraction of gradient corrections to the correlation in a Hartree-Fock/DFT hybrid functional type calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/AGGAC"
+    },
+    "AGGAX": {
+        "type": "float",
+        "description": "AGGAX specifies the fraction of gradient corrections to the exchange in a Hartree-Fock/DFT hybrid functional type calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/AGGAX"
+    },
+    "ALDAC": {
+        "type": "float",
+        "description": "ALDAC specifies the fraction of LDA correlation in a Hartree-Fock/DFT hybrid functional type calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/ALDAC"
+    },
+    "ALGO": {
+        "type": "str",
+        "description": "the ALGO tag is a convenient option to specify the electronic minimisation algorithm (as of VASP.4.5) and/or to select the type of GW calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/ALGO"
+    },
+    "AMIN": {
+        "type": "float",
+        "description": "AMIN specifies the minimal mixing parameter in Kerker's[1] initial approximation to the charge dielectric function used in the Broyden[2][3]/Pulay[4] mixing scheme (IMIX=4, INIMIX=1).",
+        "url": "https://www.vasp.at/wiki/index.php/AMIN"
+    },
+    "AMIX": {
+        "type": "float",
+        "description": "AMIX specifies the linear mixing parameter.",
+        "url": "https://www.vasp.at/wiki/index.php/AMIX"
+    },
+    "AMIX_MAG": {
+        "type": "float",
+        "description": "AMIX_MAG linear mixing parameter for the magnetization density.",
+        "url": "https://www.vasp.at/wiki/index.php/AMIX_MAG"
+    },
+    "ANDERSEN_PROB": {
+        "type": "float",
+        "description": "ANDERSEN_PROB sets the collision probability for the Anderson thermostat (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/ANDERSEN_PROB"
+    },
+    "ANTIRES": {
+        "type": "int",
+        "description": "The flag ANTIRES determines whether the Tamm-Dancoff approximation\nis used or not.",
+        "url": "https://www.vasp.at/wiki/index.php/ANTIRES"
+    },
+    "APACO": {
+        "type": "float",
+        "description": "APACO sets the maximum distance in the evaluation of the pair-correlation function (in \u00c5).",
+        "url": "https://www.vasp.at/wiki/index.php/APACO"
+    },
+    "AUGER_BMAX_EEH": {
+        "type": "int_array",
+        "description": "4 ints | calculations"
+    },
+    "AUGER_BMAX_EHH": {
+        "type": "int_array",
+        "description": "4 ints |"
+    },
+    "AUGER_BMIN_EEH": {
+        "type": "int_array",
+        "description": "4 ints | Various undocumented parameters for Auger"
+    },
+    "AUGER_BMIN_EHH": {
+        "type": "int_array",
+        "description": "4 ints |"
+    },
+    "AUGER_ECBLO": {
+        "type": "float",
+        "description": "Undocumented parameter for Auger calculations"
+    },
+    "AUGER_EDENS": {
+        "type": "float",
+        "description": "Density of electrons in conduction band"
+    },
+    "AUGER_EFERMI": {
+        "type": "float",
+        "description": "Fixed Fermi level for Auger calculations"
+    },
+    "AUGER_EMAX_EEH": {
+        "type": "float_array",
+        "description": "4 floats | calculations"
+    },
+    "AUGER_EMAX_EHH": {
+        "type": "float_array",
+        "description": "4 floats |"
+    },
+    "AUGER_EMIN_EEH": {
+        "type": "float_array",
+        "description": "4 floats | Various undocumented parameters for Auger"
+    },
+    "AUGER_EMIN_EHH": {
+        "type": "float_array",
+        "description": "4 floats |"
+    },
+    "AUGER_EVBHI": {
+        "type": "float",
+        "description": "Upper bound for valence band maximum"
+    },
+    "AUGER_EWIDTH": {
+        "type": "float",
+        "description": "Half-width of energy window function"
+    },
+    "AUGER_HDENS": {
+        "type": "float",
+        "description": "Density of holes in valence band"
+    },
+    "AUGER_OCC_FAC_EEH": {
+        "type": "float",
+        "description": "Undocumented parameter for Auger calculations"
+    },
+    "AUGER_OCC_FAC_EHH": {
+        "type": "float",
+        "description": "Undocumented parameter for Auger calculations"
+    },
+    "AUGER_TEMP": {
+        "type": "float",
+        "description": "Temperature for Auger calculation"
+    },
+    "AVECCONST": {
+        "type": "float_array",
+        "description": "3 floats | magnitude of magnetic moment (NMR)"
+    },
+    "AVGAP": {
+        "type": "float",
+        "description": "Average gap (Model GW)"
+    },
+    "BCONST": {
+        "type": "float_array",
+        "description": "3 floats | magnitude of constant magnetic field (NMR)"
+    },
+    "BEXT": {
+        "type": "float_array",
+        "description": "3 floats | Undocumented (probably external magnetic field)"
+    },
+    "BMIX": {
+        "type": "float",
+        "description": "BMIX sets the cutoff wave vector for Kerker mixing scheme[1] (IMIX=1 and/or INIMIX=1).",
+        "url": "https://www.vasp.at/wiki/index.php/BMIX"
+    },
+    "BMIX_MAG": {
+        "type": "float",
+        "description": "BMIX_MAG sets the cutoff wave vector for Kerker mixing scheme[1] (IMIX=1 and/or INIMIX=1) for the magnetization density.",
+        "url": "https://www.vasp.at/wiki/index.php/BMIX_MAG"
+    },
+    "BPARAM": {
+        "type": "float",
+        "description": "Used to control rVV10 (LUSE_VDW)",
+        "url": "https://www.vasp.at/wiki/index.php/VdW-DF_functional_of_Langreth_and_Lundqvist_et_al."
+    },
+    "CH_LSPEC": {
+        "type": "bool",
+        "description": "This flag controls whether the imaginary part of the dielectric function for a selected core electron is calculated and written to the OUTCAR file or not.",
+        "url": "https://www.vasp.at/wiki/index.php/CH_LSPEC"
+    },
+    "CH_NEDOS": {
+        "type": "int",
+        "description": "This tag specifies the number of frequency (energy) grid points on the x-axis in the calculation of the dielectric function for XAS spectra.",
+        "url": "https://www.vasp.at/wiki/index.php/CH_NEDOS"
+    },
+    "CH_SIGMA": {
+        "type": "float",
+        "description": "This tag specifies the broadening in eV of the imaginary dielectric function for a core electron.",
+        "url": "https://www.vasp.at/wiki/index.php/CH_SIGMA"
+    },
+    "CLL": {
+        "type": "int",
+        "description": "CLL selects the angular (l) quantum number of the excited electron when using ICORELEVEL.",
+        "url": "https://www.vasp.at/wiki/index.php/CLL"
+    },
+    "CLN": {
+        "type": "int",
+        "description": "CLN selects the main quantum number of the excited electron when using ICORELEVEL.",
+        "url": "https://www.vasp.at/wiki/index.php/CLN"
+    },
+    "CLNT": {
+        "type": "int",
+        "description": "CLNT selects for which species the core levels are calculated using the tag ICORELEVEL.",
+        "url": "https://www.vasp.at/wiki/index.php/CLNT"
+    },
+    "CLZ": {
+        "type": "float",
+        "description": "CLZ selects the electron count of the excited electron when using ICORELEVEL.",
+        "url": "https://www.vasp.at/wiki/index.php/CLZ"
+    },
+    "CMBJ": {
+        "type": "float_array",
+        "description": "defines the c parameter in the modified Becke-Johnson meta-GGA potential.",
+        "url": "https://www.vasp.at/wiki/index.php/CMBJ"
+    },
+    "CMBJA": {
+        "type": "float",
+        "description": "sets the \u03b1 parameter in the modified Becke-Johnson meta-GGA potential.",
+        "url": "https://www.vasp.at/wiki/index.php/CMBJA"
+    },
+    "CMBJB": {
+        "type": "float",
+        "description": "sets the \u03b2 parameter in the modified Becke-Johnson meta-GGA potential.",
+        "url": "https://www.vasp.at/wiki/index.php/CMBJB"
+    },
+    "CPARAM": {
+        "type": "float",
+        "description": "Used to control rVV10 (LUSE_VDW)",
+        "url": "https://www.vasp.at/wiki/index.php/VdW-DF_functional_of_Langreth_and_Lundqvist_et_al."
+    },
+    "CSHIFT": {
+        "type": "float",
+        "description": "CSHIFT sets the (small) complex shift \u03b7 in the Kramers-Kronig transformation.",
+        "url": "https://www.vasp.at/wiki/index.php/CSHIFT"
+    },
+    "DARWINR": {
+        "type": "float_array",
+        "description": "ntypd (?) floats | Undocumented parameter"
+    },
+    "DEFECTBAND": {
+        "type": "int",
+        "description": "Used with Darshana Wickramaratne code modifications."
+    },
+    "DEG_THRESHOLD": {
+        "type": "float",
+        "description": "Degeneracy threshold"
+    },
+    "DEPER": {
+        "type": "float",
+        "description": "DEPER specifies a relative stopping criterion for the optimization of an eigenvalue.",
+        "url": "https://www.vasp.at/wiki/index.php/DEPER"
+    },
+    "DFIELD": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "DIM": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "DIMER_DIST": {
+        "type": "float",
+        "description": "The flag DIMER_DIST defines the step size for the numerical differentiation (in $\\mathrm{\\AA}$) for the Improved Dimer Method.",
+        "url": "https://www.vasp.at/wiki/index.php/DIMER_DIST"
+    },
+    "DIPOL": {
+        "type": "float_array",
+        "description": "specifies the center of the cell in direct lattice coordinates with respect to which the total dipole-moment in the cell is calculated.",
+        "url": "https://www.vasp.at/wiki/index.php/DIPOL"
+    },
+    "DQ": {
+        "type": "float",
+        "description": "step size for the finite difference k-space derivative in the linear response calculation of chemical shifts.",
+        "url": "https://www.vasp.at/wiki/index.php/DQ"
+    },
+    "DVVDELTA0": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "DVVEHISTORY": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "DVVMAXPOTIM": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "DVVMINPOTIM": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "DVVMINUS": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "DVVVNORM0": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "EBREAK": {
+        "type": "float",
+        "description": "EBREAK specifies an absolute stopping criterion for the optimization of an eigenvalue.",
+        "url": "https://www.vasp.at/wiki/index.php/EBREAK"
+    },
+    "EDIFF": {
+        "type": "float",
+        "description": "EDIFF specifies the global break condition for the electronic SC-loop. EDIFF is specified in units of eV.",
+        "url": "https://www.vasp.at/wiki/index.php/EDIFF"
+    },
+    "EDIFFG": {
+        "type": "float",
+        "description": "EDIFFG defines the break condition for the ionic relaxation loop.",
+        "url": "https://www.vasp.at/wiki/index.php/EDIFFG"
+    },
+    "EFERMI": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "EFIELD": {
+        "type": "float",
+        "description": "EFIELD controls the magnitude of the applied electric force field.",
+        "url": "https://www.vasp.at/wiki/index.php/EFIELD"
+    },
+    "EFIELD_PEAD": {
+        "type": "float_array",
+        "description": "EFIELD_PEAD specifies the homogeneous electric field in the electric enthalpy functional used to compute the self-consistent response to finite electric fields.",
+        "url": "https://www.vasp.at/wiki/index.php/EFIELD_PEAD"
+    },
+    "EINT": {
+        "type": "float_array",
+        "description": "Specifies the energy range of the bands that are used for the evaluation of the partial charge density needed in Band decomposed charge densities. Check also NBMOD and IBAND.",
+        "url": "https://www.vasp.at/wiki/index.php/EINT"
+    },
+    "EMAX": {
+        "type": "float",
+        "description": "EMAX specifies the  upper boundary of the energy range\nfor the evaluation of the DOS.",
+        "url": "https://www.vasp.at/wiki/index.php/EMAX"
+    },
+    "EMIN": {
+        "type": "float",
+        "description": "EMAX specifies the  lower boundary of the energy range \nfor the evaluation of the DOS",
+        "url": "https://www.vasp.at/wiki/index.php/EMIN"
+    },
+    "ENAUG": {
+        "type": "float",
+        "description": "ENAUG specifies the cut-off energy of the plane wave representation of the augmentation charges in eV.",
+        "url": "https://www.vasp.at/wiki/index.php/ENAUG"
+    },
+    "ENCHG": {
+        "type": "float",
+        "description": "Undocumented charge fitting parameter"
+    },
+    "ENCUT": {
+        "type": "float",
+        "description": "ENCUT specifies the cutoff energy for the plane-wave-basis set in eV.",
+        "url": "https://www.vasp.at/wiki/index.php/ENCUT"
+    },
+    "ENCUT4O": {
+        "type": "float",
+        "description": "Cutoff energy for 4-center integrals (HF)"
+    },
+    "ENCUTAE": {
+        "type": "float",
+        "description": "Undocumented parameter for all-electron density calc."
+    },
+    "ENCUTFOCK": {
+        "type": "float",
+        "description": "The ENCUTFOCK tag sets the energy cutoff that determines the FFT grids used by the Hartree-Fock routines.",
+        "url": "https://www.vasp.at/wiki/index.php/ENCUTFOCK"
+    },
+    "ENCUTGW": {
+        "type": "float",
+        "description": "The tag ENCUTGW sets the energy cutoff for the response function. It controls the basis set for the response functions\nin exactly the same manner as ENCUT does for the orbitals.",
+        "url": "https://www.vasp.at/wiki/index.php/ENCUTGW"
+    },
+    "ENCUTGWSOFT": {
+        "type": "float",
+        "description": "The flag ENCUTGWSOFT sets the energy cutoff for response function, such that it allows to truncate the Coulomb kernel slowly between the energy\nspecified by ENCUTGWSOFT and ENCUTGW using a cosine window function.",
+        "url": "https://www.vasp.at/wiki/index.php/ENCUTGWSOFT"
+    },
+    "ENCUTLF": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "ENCUTSUBROTSCF": {
+        "type": "float",
+        "description": "Undocumented subspace rotation SCF parameter"
+    },
+    "ENGINE": {
+        "type": "int",
+        "description": "Undocumented dimer parameter"
+    },
+    "ENINI": {
+        "type": "float",
+        "description": "ENINI controls the cutoff during the initial (steepest descent) phase for IALGO=48.",
+        "url": "https://www.vasp.at/wiki/index.php/ENINI"
+    },
+    "ENMAX": {
+        "type": "float",
+        "description": "Cutoff energy for wavefunctions (?)"
+    },
+    "EPSILON": {
+        "type": "float",
+        "description": "EPSILON sets the dielectric constant of the medium.",
+        "url": "https://www.vasp.at/wiki/index.php/EPSILON"
+    },
+    "EQUI_REGIME": {
+        "type": "int",
+        "description": "Number of steps to equilibrate for"
+    },
+    "EREF": {
+        "type": "float",
+        "description": "Reference energy"
+    },
+    "ESEMICORE": {
+        "type": "float",
+        "description": "Energetic lower bound for states considered \"semicore\""
+    },
+    "ESTOP": {
+        "type": "float",
+        "description": "ESTOP specifies the stop condition for stochastic MP2.",
+        "url": "https://www.vasp.at/wiki/index.php/ESTOP"
+    },
+    "EVENONLY": {
+        "type": "bool",
+        "description": "EVENONLY=.TRUE. selects a subset of k-points for the representation of the Fock exchange potential, with C1=C2=C3=1, and n1+n2+n3 even.",
+        "url": "https://www.vasp.at/wiki/index.php/EVENONLY"
+    },
+    "EVENONLYGW": {
+        "type": "bool",
+        "description": "EVENONLYGW allows to restrict the k-points in the evaluation of response functions (in GW calculations) to even values.",
+        "url": "https://www.vasp.at/wiki/index.php/EVENONLYGW"
+    },
+    "EXTERNAL_PRESSURE": {
+        "type": "float",
+        "description": "Pressure for NPT calcs., equivalent to PSTRESS"
+    },
+    "EXTERNAL_STRESS": {
+        "type": "float_array",
+        "description": "6 floats | Target stress (adds w/ external_pressure)"
+    },
+    "EXXOEP": {
+        "type": "int",
+        "description": "Undocumented HF parameter"
+    },
+    "FERDO": {
+        "type": "float_array",
+        "description": "FERDO sets the occupancies of the states in the down-spin channel for ISMEAR=-2 and ISPIN=2.",
+        "url": "https://www.vasp.at/wiki/index.php/FERDO"
+    },
+    "FERWE": {
+        "type": "float_array",
+        "description": "FERWE sets the occupancies of the states for ISMEAR=-2.",
+        "url": "https://www.vasp.at/wiki/index.php/FERWE"
+    },
+    "FFTWMAKEPLAN": {
+        "type": "str"
+    },
+    "FINDIFF": {
+        "type": "int",
+        "description": "The flag DIMER_DIST defines whether a forward (FINDIFF=1) or a central (FINDIFF=2) difference formula for the numerical differentiation to compute the curvature along the dimer direction is used in the Improved Dimer Method.",
+        "url": "https://www.vasp.at/wiki/index.php/FINDIFF"
+    },
+    "FLETCHER_REEVES": {
+        "type": "bool",
+        "description": "Undocumented dimer parameter"
+    },
+    "FOURORBIT": {
+        "type": "str",
+        "description": "Undocumented HF parameter"
+    },
+    "GGA": {
+        "type": "str",
+        "description": "GGA specifies the GGA or LDA exchange-correlation functional one wishes to use.",
+        "url": "https://www.vasp.at/wiki/index.php/GGA"
+    },
+    "GGA_COMPAT": {
+        "type": "bool",
+        "description": "This flag restores the full lattice symmetry for gradient corrected functionals.",
+        "url": "https://www.vasp.at/wiki/index.php/GGA_COMPAT"
+    },
+    "HFALPHA": {
+        "type": "float",
+        "description": "HFALPHA sets the decay constant used in the method of Massida, Posternak, and Baldereschi, which is activated by HFRCUT=0.",
+        "url": "https://www.vasp.at/wiki/index.php/HFALPHA"
+    },
+    "HFLMAX": {
+        "type": "int",
+        "description": "To be compatible w.r.t. old releases, VASP also reads the flag HFLMAX to the same effect as LMAXFOCK.",
+        "url": "https://www.vasp.at/wiki/index.php/HFLMAX"
+    },
+    "HFRCUT": {
+        "type": "float",
+        "description": "HFRCUT specifies how the Coulomb kernel is approximated at G=0 when the Fock energy and the exchange potential are evaluated.",
+        "url": "https://www.vasp.at/wiki/index.php/HFRCUT"
+    },
+    "HFSCREEN": {
+        "type": "float",
+        "description": "HFSCREEN specifies the range-separation parameter in range separated hybrid functionals.",
+        "url": "https://www.vasp.at/wiki/index.php/HFSCREEN"
+    },
+    "HFSCREENC": {
+        "type": "float",
+        "description": "Range-separated screening length for correlations"
+    },
+    "HILLS_ANDERSEN_PROB": {
+        "type": "float",
+        "description": "Probability of thermostat coll. for metadynamics"
+    },
+    "HILLS_BIN": {
+        "type": "int",
+        "description": "HILLS_BIN sets the number of steps after which the bias potential is updated in a metadynamics run (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/HILLS_BIN"
+    },
+    "HILLS_H": {
+        "type": "float",
+        "description": "HILLS_H specifies the height of the Gaussian hill (in eV) used in metadynamics (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/HILLS_H"
+    },
+    "HILLS_K": {
+        "type": "float",
+        "description": "Force constant coupling dummy&real for metadynamics"
+    },
+    "HILLS_M": {
+        "type": "float",
+        "description": "Mass of dummy particle for use in metadynamics"
+    },
+    "HILLS_MAXSTRIDE": {
+        "type": "int",
+        "description": "Undocumented metadynamics parameter"
+    },
+    "HILLS_POSITION": {
+        "type": "float_array",
+        "description": "? floats | Dummy particle(s) pos. for metadynamics"
+    },
+    "HILLS_SQQ": {
+        "type": "float",
+        "description": "Nose-hoover particle mass for metadynamics"
+    },
+    "HILLS_STRIDE": {
+        "type": "float",
+        "description": "Undocumented metadynamics parameter"
+    },
+    "HILLS_TEMPERATURE": {
+        "type": "float",
+        "description": "Temp. of dummy particle for metadynamics"
+    },
+    "HILLS_VARIABLE_W": {
+        "type": "bool",
+        "description": "Enable variable-width metadynamics bias"
+    },
+    "HILLS_VELOCITY": {
+        "type": "float_array",
+        "description": "? floats | Dummy particle(s) vel. for metadynamics"
+    },
+    "HILLS_W": {
+        "type": "float",
+        "description": "HILLS_W specifies the width of the Gaussian hill (in units of the corresponding collective variable) used in metadynamics (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/HILLS_W"
+    },
+    "HILLS_WALL_LOWER": {
+        "type": "float_array",
+        "description": "? floats | Undocumented metadynamics parameter"
+    },
+    "HILLS_WALL_UPPER": {
+        "type": "float_array",
+        "description": "? floats | Undocumented metadynamics parameter"
+    },
+    "HITOLER": {
+        "type": "float",
+        "description": "HITOLER specifies the convergence parameter for iterative Hirschfeld partitioning (DFT-TS/HI).",
+        "url": "https://www.vasp.at/wiki/index.php/HITOLER"
+    },
+    "IALGO": {
+        "type": "int",
+        "description": "IALGO selects the algorithm used to optimize the orbitals.",
+        "url": "https://www.vasp.at/wiki/index.php/IALGO"
+    },
+    "IBAND": {
+        "type": "int_array",
+        "description": "Controls which bands are used in the calculation of Band decomposed charge densities. Check also NBMOD and EINT.",
+        "url": "https://www.vasp.at/wiki/index.php/IBAND"
+    },
+    "IBRION": {
+        "type": "int",
+        "description": "IBRION determines how the ions are updated and moved.",
+        "url": "https://www.vasp.at/wiki/index.php/IBRION"
+    },
+    "IBSE": {
+        "type": "int",
+        "description": "Type of BSE calculation"
+    },
+    "ICHARG": {
+        "type": "int",
+        "description": "ICHARG determines how VASP constructs the initial charge density.",
+        "url": "https://www.vasp.at/wiki/index.php/ICHARG"
+    },
+    "ICHIBARE": {
+        "type": "int",
+        "description": "determines the order of the finite difference stencil used to calculate the magnetic susceptibility.",
+        "url": "https://www.vasp.at/wiki/index.php/ICHIBARE"
+    },
+    "ICORELEVEL": {
+        "type": "int",
+        "description": "ICORELEVEL controls whether the core energies are explicitely calculated or not and how they are calculated.",
+        "url": "https://www.vasp.at/wiki/index.php/ICORELEVEL"
+    },
+    "IDIOT": {
+        "type": "int",
+        "description": "Determines which warnings/errors to print. 'IDIOT=0' means 'complete expert' while 'IDIOT=3' means 'complete idiot'. The default user is evidently assumed to be 'a complete idiot'"
+    },
+    "IDIPOL": {
+        "type": "int",
+        "description": "IDIPOL switches on monopole/dipole and quadrupole corrections to the total energy.",
+        "url": "https://www.vasp.at/wiki/index.php/IDIPOL"
+    },
+    "IEPSILON": {
+        "type": "int",
+        "description": "The flag IEPSILON determines along which Cartesien the \nE field is applied.",
+        "url": "https://www.vasp.at/wiki/index.php/IEPSILON"
+    },
+    "IGPAR": {
+        "type": "int",
+        "description": "This tag specifies the socalled parallel or ${\\mathbf{G}}_{\\parallel}$ direction in the integration over the reciprocal space unit cell needed for LCALCPOL.",
+        "url": "https://www.vasp.at/wiki/index.php/IGPAR"
+    },
+    "IMAGES": {
+        "type": "int",
+        "description": "IMAGES defines the number of interpolated geometries between the initial and final state in Elastic Band calculations",
+        "url": "https://www.vasp.at/wiki/index.php/IMAGES"
+    },
+    "IMIX": {
+        "type": "int",
+        "description": "IMIX specifies the type of mixing.",
+        "url": "https://www.vasp.at/wiki/index.php/IMIX"
+    },
+    "INCREM": {
+        "type": "float_array",
+        "description": "INCREM controls the transformation velocity in the slow-growth approach (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/INCREM"
+    },
+    "INIMIX": {
+        "type": "int",
+        "description": "INIMIX determines the functional form of the initial mixing matrix in the Broyden scheme (IMIX=4).",
+        "url": "https://www.vasp.at/wiki/index.php/INIMIX"
+    },
+    "INIWAV": {
+        "type": "int",
+        "description": "INIWAV specifies how to set up the initial orbitals in case ISTART=0.",
+        "url": "https://www.vasp.at/wiki/index.php/INIWAV"
+    },
+    "INTERACTIVE": {
+        "type": "bool",
+        "description": "Enables interactive calculation for VaspInteractive"
+    },
+    "IPEAD": {
+        "type": "int",
+        "description": "IPEAD specifies the order of the finite difference stencil used to compute the derivative of the cell-periodic part of the orbitals w.r.t. k, |\u2207kunk\u232a (LPEAD=.TRUE.), and the derivative of the polarization w.r.t. the orbitals, \u03b4P/\u03b4\u2329\u03c8nk| for (LCALCEPS=.TRUE., or EFIELD_PEAD\u22600).",
+        "url": "https://www.vasp.at/wiki/index.php/IPEAD"
+    },
+    "IRESTART": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "ISIF": {
+        "type": "int",
+        "description": "ISIF determines whether the stress tensor is calculated and which principal degrees-of-freedom are allowed to change in relaxation and molecular dynamics runs.",
+        "url": "https://www.vasp.at/wiki/index.php/ISIF"
+    },
+    "ISMEAR": {
+        "type": "int",
+        "description": "ISMEAR determines how the partial occupancies fnk are set for each orbital. SIGMA determines the width of the smearing in eV.",
+        "url": "https://www.vasp.at/wiki/index.php/ISMEAR"
+    },
+    "ISPIN": {
+        "type": "int",
+        "description": "ISPIN specifies spin polarization.",
+        "url": "https://www.vasp.at/wiki/index.php/ISPIN"
+    },
+    "ISP_INDEX": {
+        "type": "int_array",
+        "description": "isp_out ints | Undocumented QP parameter"
+    },
+    "ISP_OUT": {
+        "type": "int",
+        "description": "Undocumented QP parameter"
+    },
+    "ISTART": {
+        "type": "int",
+        "description": "ISTART determines whether or not to read the WAVECAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/ISTART"
+    },
+    "ISYM": {
+        "type": "int",
+        "description": "ISYM determines the way VASP treats symmetry.",
+        "url": "https://www.vasp.at/wiki/index.php/ISYM"
+    },
+    "IVDW": {
+        "type": "int",
+        "description": "This tag controls whether vdW corrections are calculated or not. If they are calculated IVDW controls how they are calculated.",
+        "url": "https://www.vasp.at/wiki/index.php/IVDW"
+    },
+    "IWAVPR": {
+        "type": "int",
+        "description": "IWAVPR determines how orbitals and/or charge densities\nare extrapolated from one ionic configuration to the next configuration.",
+        "url": "https://www.vasp.at/wiki/index.php/IWAVPR"
+    },
+    "I_CONSTRAINED_M": {
+        "type": "int",
+        "description": "I_CONSTRAINED_M switches on the constrained local moments approach.",
+        "url": "https://www.vasp.at/wiki/index.php/I_CONSTRAINED_M"
+    },
+    "JATOM": {
+        "type": "int",
+        "description": "Index of atom at which magnetic moment is evaluated (NMR)"
+    },
+    "KBLOCK": {
+        "type": "int",
+        "description": "After KBLOCK*NBLOCK ionic steps the averaged pair correlation function and DOS are written to the files PCDAT  and DOSCAR. More details can be found on the page describing \nthe tag NBLOCK.",
+        "url": "https://www.vasp.at/wiki/index.php/KBLOCK"
+    },
+    "KGAMMA": {
+        "type": "bool",
+        "description": "Determines whether the k-points (determined by the tag KSPACING if KPOINTS file is not present) are center around (KGAMMA=.TRUE.) or shifted away (KGAMMA=.FALSE.) from the $\\Gamma$ point.",
+        "url": "https://www.vasp.at/wiki/index.php/KGAMMA"
+    },
+    "KIMAGES": {
+        "type": "str",
+        "description": "Undocumented parameter"
+    },
+    "KINTER": {
+        "type": "int",
+        "description": "Additional finer grid (?)"
+    },
+    "KPAR": {
+        "type": "int",
+        "description": "KPAR determines the number of k-points that are to be treated in parallel (available as of VASP.5.3.2). Also, KPAR is used as parallelization tag for Laplace transformed MP2 calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/KPAR"
+    },
+    "KPOINT_BSE": {
+        "type": "str",
+        "description": "The flag KPOINT_BSE allows to calculate the dielectric matrix at one of the  kpoints used to sample the Brillouin zone.",
+        "url": "https://www.vasp.at/wiki/index.php/KPOINT_BSE"
+    },
+    "KPROJ_THRESHOLD": {
+        "type": "float",
+        "description": "Threshold for k-point projection scheme"
+    },
+    "KPTS_INDEX": {
+        "type": "int_array",
+        "description": "kpts_out ints | Undocumented QP parameter"
+    },
+    "KPTS_OUT": {
+        "type": "int",
+        "description": "Undocumented QP parameter"
+    },
+    "KPUSE": {
+        "type": "int_array",
+        "description": "Specifies which k-points are used in the evaluation of the partial dos (Band decomposed charge densities).",
+        "url": "https://www.vasp.at/wiki/index.php/KPUSE"
+    },
+    "KSPACING": {
+        "type": "float",
+        "description": "The tag  KSPACING determines the number of k-points if the KPOINTS file\nis not present.",
+        "url": "https://www.vasp.at/wiki/index.php/KSPACING"
+    },
+    "L2ORDER": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LADAPTELIN": {
+        "type": "bool",
+        "description": "Linearize core state energies to avoid divergences"
+    },
+    "LADDER": {
+        "type": "bool",
+        "description": "Controls whether the ladder diagrams are included in the BSE calculation. Note that the default\nfor LRPA and therefore LADDER is somewhat convoluted; so better to always double check the OUTCAR file \nwhether VASP behaves as expected. Generally, VASP will select ladder diagrams whenever this seems reasonable.\nThis is for instance the case for ALGO \"BSE\" or \"TDHF\" calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/LADDER"
+    },
+    "LADDHERM": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LAECHG": {
+        "type": "bool",
+        "description": "when LAECHG=.TRUE. the all-electron charge density will be reconstructed explicitly and written out to file.",
+        "url": "https://www.vasp.at/wiki/index.php/LAECHG"
+    },
+    "LAMBDA": {
+        "type": "float",
+        "description": "LAMBDA sets the weight with which the penalty terms of the constrained local moment approach enter into the total energy expression and the Hamiltonian.",
+        "url": "https://www.vasp.at/wiki/index.php/LAMBDA"
+    },
+    "LANGEVIN_GAMMA": {
+        "type": "float_array",
+        "description": "LANGEVIN_GAMMA specifies the friction coefficients (in ps-1) for atomic degrees-of-freedom when using a Langevin thermostat (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/LANGEVIN_GAMMA"
+    },
+    "LANGEVIN_GAMMA_L": {
+        "type": "float",
+        "description": "LANGEVIN_GAMMA_L specifies the friction coefficient (in ps-1) for lattice degrees-of-freedom in case of Parrinello-Rahman dynamics (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/LANGEVIN_GAMMA_L"
+    },
+    "LASPH": {
+        "type": "bool",
+        "description": "include non-spherical contributions related to the gradient of the density in the PAW spheres.",
+        "url": "https://www.vasp.at/wiki/index.php/LASPH"
+    },
+    "LASYNC": {
+        "type": "bool",
+        "description": "This tag controls the overlap in communication.",
+        "url": "https://www.vasp.at/wiki/index.php/LASYNC"
+    },
+    "LATTICE_CONSTRAINTS": {
+        "type": "bool_array",
+        "description": "The tag LATTICE_CONSTRAINTS determines whether the lattice dynamics are released (LATTICE_CONSTRAINTS=.TRUE.) in the given directions or not.",
+        "url": "https://www.vasp.at/wiki/index.php/LATTICE_CONSTRAINTS"
+    },
+    "LAUGER": {
+        "type": "bool",
+        "description": "Perform Auger calculation (Auger)"
+    },
+    "LAUGER_COLLECT": {
+        "type": "bool",
+        "description": "Collect wfns before looping over k-points (Auger)"
+    },
+    "LAUGER_DHDK": {
+        "type": "bool",
+        "description": "Auto-determine E. window width from E. derivs. (Auger)"
+    },
+    "LAUGER_EEH": {
+        "type": "bool",
+        "description": "Calculate EEH processes (Auger)"
+    },
+    "LAUGER_EHH": {
+        "type": "bool",
+        "description": "Calculate EHH processes (Auger)"
+    },
+    "LAUGER_JIT": {
+        "type": "bool",
+        "description": "Distribute wavefunctions for k1-k4 (Auger)"
+    },
+    "LBEEFBAS": {
+        "type": "bool",
+        "description": "Switch off print of all BEEs in OUTCAR"
+    },
+    "LBEEFENS": {
+        "type": "bool",
+        "description": "Switch on print of BEE energy contributions in OUTCAR"
+    },
+    "LBERRY": {
+        "type": "bool",
+        "description": "This tag is used in the the evaluation of the Berry phase expression for the electronic polarization of an insulating system.",
+        "url": "https://www.vasp.at/wiki/index.php/LBERRY"
+    },
+    "LBFCONST": {
+        "type": "bool",
+        "description": "Use constant B-field with sawtooth vector potential (NMR)"
+    },
+    "LBLUEOUT": {
+        "type": "bool",
+        "description": "for LBLUEOUT=.TRUE., VASP writes output for the free-energy gradient calculation to the REPORT-file (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/LBLUEOUT"
+    },
+    "LBONE": {
+        "type": "bool",
+        "description": "LBONE adds the small B-component to the chemical shift tensor.",
+        "url": "https://www.vasp.at/wiki/index.php/LBONE"
+    },
+    "LCALCEPS": {
+        "type": "bool",
+        "description": "for LCALCEPS=.TRUE. the macroscopic ion-clamped static dielectric tensor, Born effective charge tensors, and the ion-clamped piezoelectric tensor of the system are determined from the response to finite electric fields.",
+        "url": "https://www.vasp.at/wiki/index.php/LCALCEPS"
+    },
+    "LCALCPOL": {
+        "type": "bool",
+        "description": "LCALCPOL=.TRUE.  switches on the evaluation of the Berry phase expressions for the macroscopic electronic polarization in accordance with the so-called Modern Theory of Polarization.",
+        "url": "https://www.vasp.at/wiki/index.php/LCALCPOL"
+    },
+    "LCFDM": {
+        "type": "bool",
+        "description": "Use coupled fluctuating dipoles model for TS vdW"
+    },
+    "LCHARG": {
+        "type": "bool",
+        "description": "LCHARG determines whether the charge densities (files CHGCAR and CHG) are written.",
+        "url": "https://www.vasp.at/wiki/index.php/LCHARG"
+    },
+    "LCHGFIT": {
+        "type": "bool",
+        "description": "Turn on charge fitting"
+    },
+    "LCHIMAG": {
+        "type": "bool",
+        "description": "calculate the chemical shifts by means of linear response.",
+        "url": "https://www.vasp.at/wiki/index.php/LCHIMAG"
+    },
+    "LCOMPAT": {
+        "type": "bool",
+        "description": "Enable \"full compatibility\""
+    },
+    "LCORR": {
+        "type": "bool",
+        "description": "Controls whether Harris corrections are calculated or not.",
+        "url": "https://www.vasp.at/wiki/index.php/LCORR"
+    },
+    "LCRPAPLOT": {
+        "type": "bool",
+        "description": "Plot bands used in CRPA response func. calc."
+    },
+    "LDAU": {
+        "type": "bool",
+        "description": "LDAU=.TRUE. switches on the L(S)DA+U.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAU"
+    },
+    "LDAUJ": {
+        "type": "float_array",
+        "description": "LDAUJ specifies the strength of the effective on-site exchange interactions.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAUJ"
+    },
+    "LDAUL": {
+        "type": "int_array",
+        "description": "LDAUL specifies the l-quantum number for which the on-site interaction is added.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAUL"
+    },
+    "LDAUPRINT": {
+        "type": "int",
+        "description": "LDAUPRINT controls the verbosity of the L(S)DA+U routines.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAUPRINT"
+    },
+    "LDAUTYPE": {
+        "type": "int",
+        "description": "LDAUTYPE specifies which type of L(S)DA+U approach will be used.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAUTYPE"
+    },
+    "LDAUU": {
+        "type": "float_array",
+        "description": "LDAUU specifies the strength of the effective on-site Coulomb interactions.",
+        "url": "https://www.vasp.at/wiki/index.php/LDAUU"
+    },
+    "LDIAG": {
+        "type": "bool",
+        "description": "This tag determines whether a subspace diagonalization is performed or not within the main algorithm selected by ALGO or IALGO.",
+        "url": "https://www.vasp.at/wiki/index.php/LDIAG"
+    },
+    "LDIPOL": {
+        "type": "bool",
+        "description": "LDIPOL switches on corrections to the potential and forces in VASP. Can be applied for charged molecules and molecules and slabs with a net dipole moment.",
+        "url": "https://www.vasp.at/wiki/index.php/LDIPOL"
+    },
+    "LDMATRIX": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LDOWNSAMPLE": {
+        "type": "bool",
+        "description": "Downsample WAVECAR to fewer k-points"
+    },
+    "LDRUDE": {
+        "type": "bool",
+        "description": "Include Drude term in CRPA"
+    },
+    "LEFG": {
+        "type": "bool",
+        "description": "The LEFG Computes the Electric Field Gradient at positions of the atomic nuclei.",
+        "url": "https://www.vasp.at/wiki/index.php/LEFG"
+    },
+    "LELF": {
+        "type": "bool",
+        "description": "LELF determines whether to create an\nELFCAR file or not.",
+        "url": "https://www.vasp.at/wiki/index.php/LELF"
+    },
+    "LEPSILON": {
+        "type": "bool",
+        "description": "LEPSILON=.TRUE. determines the static dielectric matrix, ion-clamped piezoelectric tensor and the Born effective charges using density functional perturbation theory.",
+        "url": "https://www.vasp.at/wiki/index.php/LEPSILON"
+    },
+    "LFERMIGW": {
+        "type": "bool",
+        "description": "Iterate Fermi level"
+    },
+    "LFINITE_TEMPERATURE": {
+        "type": "bool",
+        "description": "LFINITE_TEMPERATURE switches on the finite-temperature formalism of many-body perturbation theory for adiabatic-connection-fluctuation-dissipation-theorem (ACFDT)/GW calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/LFINITE_TEMPERATURE"
+    },
+    "LFOCKACE": {
+        "type": "bool",
+        "description": "LFOCKACE determines whether the Adaptively Compressed Exchange Operator is used.[1]",
+        "url": "https://www.vasp.at/wiki/index.php/LFOCKACE"
+    },
+    "LFOCKAEDFT": {
+        "type": "bool",
+        "description": "LFOCKAEDFT forces VASP to use the same charge augmentation \nfor the Hartree and DFT exchange correlation part as is used in the Fock exchange and\nthe many body beyond DFT methods, such as RPA, MP2 etc.",
+        "url": "https://www.vasp.at/wiki/index.php/LFOCKAEDFT"
+    },
+    "LFXC": {
+        "type": "bool",
+        "description": "Use approximate ladder diagrams"
+    },
+    "LFXCEPS": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LFXHEG": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LGAUGE": {
+        "type": "bool",
+        "description": "Use gauge transformation for zero moment terms (NMR)"
+    },
+    "LGAUSRC": {
+        "type": "bool",
+        "description": "Undocumented charge fitting parameter"
+    },
+    "LGWLF": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LHARTREE": {
+        "type": "bool",
+        "description": "Controls whether the bubble diagrams are included in the BSE calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/LHARTREE"
+    },
+    "LHFCALC": {
+        "type": "bool",
+        "description": "LHFCALC specifies whether Hartree-Fock/DFT hybrid functional type calculations are performed.",
+        "url": "https://www.vasp.at/wiki/index.php/LHFCALC"
+    },
+    "LHFONE": {
+        "type": "bool",
+        "description": "Calculate one-center terms (HF)"
+    },
+    "LHYPERFINE": {
+        "type": "bool",
+        "description": "compute the hyperfine tensors at the atomic sites (available as of vasp.5.3.2).",
+        "url": "https://www.vasp.at/wiki/index.php/LHYPERFINE"
+    },
+    "LIBXC1": {
+        "type": "str",
+        "description": "LIBXC1 specifies the exchange or exchange-correlation functional from the library of exchange-correlation functionals Libxc[1][2][3] that one wants to use. If LIBXC1 corresponds to an exchange functional, then it can be used in combination with LIBXC2 that specifies the correlation functional.",
+        "url": "https://www.vasp.at/wiki/index.php/LIBXC1"
+    },
+    "LIBXC1_Pn": {
+        "type": "float",
+        "description": "LIBXC1_Pn, where $n=1,2,\\ldots$ allows to specify the values of the parameters of the functional implemented in Libxc that is called with LIBXC1.",
+        "url": "https://www.vasp.at/wiki/index.php/LIBXC1_Pn"
+    },
+    "LIBXC2": {
+        "type": "str",
+        "description": "LIBXC2 specifies the correlation functional from the library of exchange-correlation functionals Libxc[1][2][3] that one wants to use. LIBXC2 can be used only if the functional specified with LIBXC1 corresponds to only exchange and not to exchange and correlation.",
+        "url": "https://www.vasp.at/wiki/index.php/LIBXC2"
+    },
+    "LIBXC2_Pn": {
+        "type": "float",
+        "description": "LIBXC2_Pn, where $n=1,2,\\ldots$ allows to specify the values of the parameters of the functional implemented in Libxc that is called with LIBXC2.",
+        "url": "https://www.vasp.at/wiki/index.php/LIBXC2_Pn"
+    },
+    "LIDM_SELECTIVE": {
+        "type": "bool",
+        "description": "Undocumented dimer parameter"
+    },
+    "LINTERFAST": {
+        "type": "bool",
+        "description": "Interpolate in K using linear response routines"
+    },
+    "LINTPOL_KPATH": {
+        "type": "bool",
+        "description": "Interpolate bandstructure on given kpath for Wannier"
+    },
+    "LJ_EPSILON": {
+        "type": "float",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LJ_ONLY": {
+        "type": "bool",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LJ_RADIUS": {
+        "type": "float",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LJ_SIGMA": {
+        "type": "float",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LKOTANI": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LKPROJ": {
+        "type": "bool",
+        "description": "switches on the k-point projection scheme.",
+        "url": "https://www.vasp.at/wiki/index.php/LKPROJ"
+    },
+    "LLRAUG": {
+        "type": "bool",
+        "description": "LLRAUG calculates the two-center contributions to the chemical shift tensor.",
+        "url": "https://www.vasp.at/wiki/index.php/LLRAUG"
+    },
+    "LMAGBLOCH": {
+        "type": "bool",
+        "description": "Use Bloch summations to obtain orbital magnetization (NMR)"
+    },
+    "LMATCHRW": {
+        "type": "bool",
+        "description": "Match PS partial waves at RWIGS? (otherwise PAW cutoff)"
+    },
+    "LMAXFOCK": {
+        "type": "int",
+        "description": "LMAXFOCK sets the maximum angular momentum quantum number L for the augmentation of charge densities in Hartree-Fock type routines.",
+        "url": "https://www.vasp.at/wiki/index.php/LMAXFOCK"
+    },
+    "LMAXFOCKAE": {
+        "type": "int",
+        "description": "NMAXFOCKAE and LMAXFOCKAE determine whether \nthe overlap densities in the Fock exchange and correlated wave function methods are accurately reconstructed on the plane wave grid. This flag generally only applies to the Fock-exchange part as well as many-body\npost DFT methods (GW, RPA, MP2, etc.).",
+        "url": "https://www.vasp.at/wiki/index.php/LMAXFOCKAE"
+    },
+    "LMAXMIX": {
+        "type": "int",
+        "description": "LMAXMIX controls up to which l-quantum number the one-center PAW charge densities are passed through the charge density mixer and written to the CHGCAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/LMAXMIX"
+    },
+    "LMAXMP2": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "LMAXPAW": {
+        "type": "int",
+        "description": "LMAXPAW sets the maximum l -quantum number for the evaluation of the one-center terms on the radial support grids in the PAW method.",
+        "url": "https://www.vasp.at/wiki/index.php/LMAXPAW"
+    },
+    "LMAXTAU": {
+        "type": "int",
+        "description": "LMAXTAU is the maximum l-quantum number included in the PAW one-center expansion of the kinetic energy density.",
+        "url": "https://www.vasp.at/wiki/index.php/LMAXTAU"
+    },
+    "LMETAGGA": {
+        "type": "bool",
+        "description": "Switch on non-selfconsistent PKZB meta-GGA energy."
+    },
+    "LMIMICFC": {
+        "type": "bool",
+        "description": "Mimic frozen-core calcs. for relaxed core calcs."
+    },
+    "LMIXTAU": {
+        "type": "bool",
+        "description": "send the kinetic energy density through the density mixer as well.",
+        "url": "https://www.vasp.at/wiki/index.php/LMIXTAU"
+    },
+    "LMODELHF": {
+        "type": "bool",
+        "description": "LMODELHF selects dielectric-dependent hybrid  functionals  with full exchange in the short-range, and AEXX in the long-range.",
+        "url": "https://www.vasp.at/wiki/index.php/LMODELHF"
+    },
+    "LMONO": {
+        "type": "bool",
+        "description": "LMONO switches on monopole-monopole corrections for the total energy.",
+        "url": "https://www.vasp.at/wiki/index.php/LMONO"
+    },
+    "LMP2LT": {
+        "type": "bool",
+        "description": "LMP2LT selects a Laplace transformed MP2 algorithm.",
+        "url": "https://www.vasp.at/wiki/index.php/LMP2LT"
+    },
+    "LMUSIC": {
+        "type": "bool",
+        "description": "\"Joke\" parameter"
+    },
+    "LNABLA": {
+        "type": "bool",
+        "description": "LNABLA=.TRUE. evaluates the transversal expression for the frequency dependent dielectric matrix.",
+        "url": "https://www.vasp.at/wiki/index.php/LNABLA"
+    },
+    "LNICSALL": {
+        "type": "bool",
+        "description": "Use all grid points for 'nucind' calculation (NMR)"
+    },
+    "LNMR_SYM_RED": {
+        "type": "bool",
+        "description": "discard symmetry operations that are not consistent with the way k-space derivative are calculated in the linear response calculations of chemical shifts.",
+        "url": "https://www.vasp.at/wiki/index.php/LNMR_SYM_RED"
+    },
+    "LNONCOLLINEAR": {
+        "type": "bool",
+        "description": "LNONCOLLINEAR specifies whether fully non-collinear magnetic calculations are performed.",
+        "url": "https://www.vasp.at/wiki/index.php/LNONCOLLINEAR"
+    },
+    "LOCALIZE": {
+        "type": "bool",
+        "description": "Undocumented Wannier parameter"
+    },
+    "LOCALIZED_BASIS": {
+        "type": "str",
+        "description": "Basis to use in CRPA"
+    },
+    "LOCPROJ": {
+        "type": "str",
+        "description": "The LOCPROJ tag specifies local functions on which the orbitals are projected. These projections are written to the PROJCAR, LOCPROJ, and vasprun.xml files.",
+        "url": "https://www.vasp.at/wiki/index.php/LOCPROJ"
+    },
+    "LONLYSEMICORE": {
+        "type": "bool",
+        "description": "Only linearize semi-core state energies"
+    },
+    "LOPTICS": {
+        "type": "bool",
+        "description": "LOPTICS=.TRUE. calculates the frequency dependent dielectric matrix after the electronic ground state has been determined.",
+        "url": "https://www.vasp.at/wiki/index.php/LOPTICS"
+    },
+    "LORBIT": {
+        "type": "int",
+        "description": "LORBIT, together with an appropriate RWIGS, determines whether the PROCAR or PROOUT files are written.",
+        "url": "https://www.vasp.at/wiki/index.php/LORBIT"
+    },
+    "LORBITALREAL": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LORBMOM": {
+        "type": "bool",
+        "description": "LORBMOM specifies whether the orbital moments are written out or not (in a calculation using LSORBIT=.TRUE.).",
+        "url": "https://www.vasp.at/wiki/index.php/LORBMOM"
+    },
+    "LPADE_FIT": {
+        "type": "bool",
+        "description": "Undocumented QP parameter"
+    },
+    "LPARD": {
+        "type": "bool",
+        "description": "Determines whether partial (band or k-point decomposed) charge densities are evaluated. See also Band decomposed charge densities.",
+        "url": "https://www.vasp.at/wiki/index.php/LPARD"
+    },
+    "LPEAD": {
+        "type": "bool",
+        "description": "for LPEAD=.TRUE., the derivative of the cell-periodic part of the orbitals w.r.t. k, |\u2207kunk\u232a, is calculated using finite differences.",
+        "url": "https://www.vasp.at/wiki/index.php/LPEAD"
+    },
+    "LPLANE": {
+        "type": "bool",
+        "description": "LPLANE switches on the plane-wise data distribution in real space.",
+        "url": "https://www.vasp.at/wiki/index.php/LPLANE"
+    },
+    "LPLOTDIS": {
+        "type": "bool",
+        "description": "Plot disentangled bands in CRPA response func. calc."
+    },
+    "LRCTYPE": {
+        "type": "bool_array",
+        "description": "ntyp bools | Enable relaxed-core calc. for these atoms"
+    },
+    "LREAD_AMN": {
+        "type": "bool",
+        "description": "Read AMN files instead of recomputing (WANNIER90)"
+    },
+    "LREAL": {
+        "type": "str",
+        "description": "LREAL determines whether the projection operators are evaluated in real-space or in reciprocal space.",
+        "url": "https://www.vasp.at/wiki/index.php/LREAL"
+    },
+    "LREGULARIZE": {
+        "type": "bool",
+        "description": "Regularize projectors in CRPA"
+    },
+    "LRELVOL": {
+        "type": "bool",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LRHFATM": {
+        "type": "bool",
+        "description": "Undocumented HF parameter"
+    },
+    "LRHFCALC": {
+        "type": "bool",
+        "description": "Include long-range HF (HF)"
+    },
+    "LRPA": {
+        "type": "bool",
+        "description": "LRPA=.TRUE. includes local field effect on the Hartree level only.",
+        "url": "https://www.vasp.at/wiki/index.php/LRPA"
+    },
+    "LRPAFORCE": {
+        "type": "bool",
+        "description": "Calculate RPA forces"
+    },
+    "LRSCOR": {
+        "type": "bool",
+        "description": "Include long-range correlation (HF)"
+    },
+    "LRSRPA": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LSCAAWARE": {
+        "type": "bool",
+        "description": "LSCAAWARE controls the distribution of the Hamilton matrix.",
+        "url": "https://www.vasp.at/wiki/index.php/LSCAAWARE"
+    },
+    "LSCALAPACK": {
+        "type": "bool",
+        "description": "LSCALAPACK controls the use of scaLAPACK.",
+        "url": "https://www.vasp.at/wiki/index.php/LSCALAPACK"
+    },
+    "LSCALU": {
+        "type": "bool",
+        "description": "LSCALU switches on the parallel LU decomposition (using scaLAPACK) in the orthonormalization of the wave functions.",
+        "url": "https://www.vasp.at/wiki/index.php/LSCALU"
+    },
+    "LSCK": {
+        "type": "bool",
+        "description": "LSCK=True switches on the use of the squeezed Coulomb kernel.",
+        "url": "https://www.vasp.at/wiki/index.php/LSCK"
+    },
+    "LSCSGRAD": {
+        "type": "bool",
+        "description": "LSCSGRAD\u00a0 decides whether to compute gradients in the calculation of the MBD dispersion energy.",
+        "url": "https://www.vasp.at/wiki/index.php/LSCSGRAD"
+    },
+    "LSELFENERGY": {
+        "type": "bool",
+        "description": "This tag controls whether the frequency dependent self-energy is calculated or not.",
+        "url": "https://www.vasp.at/wiki/index.php/LSELFENERGY"
+    },
+    "LSEPB": {
+        "type": "bool",
+        "description": "Specifies whether the charge density is calculated for every band separately and written to a file PARCHG.nb.* (LSEPB=.TRUE.) or whether charge density is merged for all selected bands and written to the files PARCHG.ALLB.* or PARCHG.",
+        "url": "https://www.vasp.at/wiki/index.php/LSEPB"
+    },
+    "LSEPK": {
+        "type": "bool",
+        "description": "Specifies whether the charge density of every k-point is write to the files PARCHG.*.nk (LSEPK=.TRUE.) or whether it is merged to a single file. If the merged file is written, then the weight of each k-point is determined from the KPOINTS file, otherwise the k-point weights of one are chosen.",
+        "url": "https://www.vasp.at/wiki/index.php/LSEPK"
+    },
+    "LSINGLES": {
+        "type": "bool",
+        "description": "Calculate HF singles"
+    },
+    "LSMP2LT": {
+        "type": "bool",
+        "description": "LSMP2LT selects a stochastic Laplace transformed MP2 algorithm.",
+        "url": "https://www.vasp.at/wiki/index.php/LSMP2LT"
+    },
+    "LSORBIT": {
+        "type": "bool",
+        "description": "LSORBIT specifies whether spin-orbit coupling is taken into account.",
+        "url": "https://www.vasp.at/wiki/index.php/LSORBIT"
+    },
+    "LSPECTRAL": {
+        "type": "bool",
+        "description": "LSPECTRAL specifies to use the spectral method.",
+        "url": "https://www.vasp.at/wiki/index.php/LSPECTRAL"
+    },
+    "LSPECTRALGW": {
+        "type": "bool",
+        "description": "LSPECTRALGW specifies to use the spectral method for calculating the self-energy.",
+        "url": "https://www.vasp.at/wiki/index.php/LSPECTRALGW"
+    },
+    "LSPIRAL": {
+        "type": "bool",
+        "description": "set LSPIRAL=.TRUE. to represent spin spirals by means of a generalized Bloch condition.",
+        "url": "https://www.vasp.at/wiki/index.php/LSPIRAL"
+    },
+    "LSTOCKHOLDER": {
+        "type": "bool",
+        "description": "Enable ISA charge fitting (?)"
+    },
+    "LSUBROT": {
+        "type": "bool",
+        "description": "This flag can be set for hybrid functionals (HF-type calculations). LSUBROT determines whether an optimal rotation matrix between the occupied and unoccupied block is sought, when a direct optimization of the energy functional is performed (i.e. ALGO=All | Damped). The corresponding algorithm is unpublished.  LSUBROT =.FALSE. is the standard algorithm, in which the rotation matrix between occupied and unoccupied orbitals is determined essentially using Loewdin perturbation theory, as for instance explained in Ref. [1]. For LSUBROT =.TRUE. the rotation matrix is instead optimized by performing a few standard SCF steps, in which the orbitals are kept fixed, but rotations between the occupied and unoccupied manifold are allowed. Once satisfactory convergence has been reached, the optimized density matrix (rotation matrix between occupied and unoccupied block) is passed back to the direct optimization routine and a rotation along the suggested direction is performed alongside an update of the orbitals. This generally speeds up calculations for small gap systems as well as metals. However, in rare cases, we have observed instabilities, so be careful when selecting LSUBROT =.TRUE.",
+        "url": "https://www.vasp.at/wiki/index.php/LSUBROT"
+    },
+    "LSYMGRAD": {
+        "type": "bool",
+        "description": "Restore symmetry of gradient (HF)"
+    },
+    "LTBOUNDLIBXC": {
+        "type": "bool",
+        "description": "LTBOUNDLIBXC specifies whether or not the lower bound for the Kohn-Sham kinetic-energy density $\\tau_{\\sigma}$ ($\\tau_{\\sigma}^{\\textrm{W}}<\\tau_{\\sigma}$) is enforced before $\\tau_{\\sigma}$ is used in a meta-GGA functional from Libxc.",
+        "url": "https://www.vasp.at/wiki/index.php/LTBOUNDLIBXC"
+    },
+    "LTCTE": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LTEMPER": {
+        "type": "bool",
+        "description": "Use subspace diagonalization (?) (GH patches)"
+    },
+    "LTETE": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LTHOMAS": {
+        "type": "bool",
+        "description": "LTHOMAS selects a decomposition of the exchange functional based on Thomas-Fermi screening.",
+        "url": "https://www.vasp.at/wiki/index.php/LTHOMAS"
+    },
+    "LTRIPLET": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LUSE_VDW": {
+        "type": "bool",
+        "description": "The flag LUSE_VDW=.TRUE. switches on vdW-DF functionals. These are functionals that depend on the density at two points in space and model long range Van der Waals like correlation effects.",
+        "url": "https://www.vasp.at/wiki/index.php/LUSE_VDW"
+    },
+    "LVCADER": {
+        "type": "bool",
+        "description": "Calculate derivs. w.r.t. VCA parameters"
+    },
+    "LVDW": {
+        "type": "bool",
+        "description": "Invoke DFT-D2 method of Grimme"
+    },
+    "LVDWEXPANSION": {
+        "type": "bool",
+        "description": "LVDWEXPANSION\u00a0 decides whether to write the two- to six- body contributions to MBD dispersion energy in the OUTCAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/LVDWEXPANSION"
+    },
+    "LVDWSCS": {
+        "type": "bool",
+        "description": "Include self-consistent screening in TS vdW correction"
+    },
+    "LVDW_EWALD": {
+        "type": "bool",
+        "description": "LVDW_EWALD decides whether lattice summation in $E_{disp}$ expression by means of Ewald's summation is computed in the DFT-D2 method (available in VASP.5.3.4 and later).",
+        "url": "https://www.vasp.at/wiki/index.php/LVDW_EWALD"
+    },
+    "LVDW_ONECELL": {
+        "type": "bool_array",
+        "description": "LVDW_ONECELL\u00a0 can be used to disable vdW interaction with mirror image in X Y Z direction. This is advisable for molecular calculations in the gas phase. In all other cases, use the default.",
+        "url": "https://www.vasp.at/wiki/index.php/LVDW_ONECELL"
+    },
+    "LVDW_RELVOLONE": {
+        "type": "bool",
+        "description": "Undocumented classical vdW parameter"
+    },
+    "LVDW_SAMETYPE": {
+        "type": "bool",
+        "description": "Include interactions between atoms of the same type"
+    },
+    "LVEL": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LVHAR": {
+        "type": "bool",
+        "description": "The potential $V_{\\text{LOCPOT}}(\\mathbf{r})$ (in eV) written to the LOCPOT file is",
+        "url": "https://www.vasp.at/wiki/index.php/LVHAR"
+    },
+    "LVPOT": {
+        "type": "bool",
+        "description": "Calculate unscreened potential"
+    },
+    "LVTOT": {
+        "type": "bool",
+        "description": "LVTOT determines whether the total local potential $V_{\\text{LOCPOT}}(\\mathbf{r})$ (in eV) is written to the LOCPOT file",
+        "url": "https://www.vasp.at/wiki/index.php/LVTOT"
+    },
+    "LWANNIER": {
+        "type": "bool",
+        "description": "Enable Wannier interface"
+    },
+    "LWANNIER90": {
+        "type": "bool",
+        "description": "LWANNIER90=.TRUE. switches on the interface between VASP and WANNIER90.",
+        "url": "https://www.vasp.at/wiki/index.php/LWANNIER90"
+    },
+    "LWANNIER90_RUN": {
+        "type": "bool",
+        "description": "LWANNIER90_RUN executes wannier_setup (see LWANNIER90=.TRUE.) and subsequently runs WANNIER90 in library mode (wannier_run).",
+        "url": "https://www.vasp.at/wiki/index.php/LWANNIER90_RUN"
+    },
+    "LWAVE": {
+        "type": "bool",
+        "description": "LWAVE determines whether the wavefunctions are written to the WAVECAR file at the end of a run.",
+        "url": "https://www.vasp.at/wiki/index.php/LWAVE"
+    },
+    "LWEIGHTED": {
+        "type": "bool",
+        "description": "\"Weighted\" CRPA approach"
+    },
+    "LWPOT": {
+        "type": "bool",
+        "description": "Calculate screened potential"
+    },
+    "LWRITE_MMN_AMN": {
+        "type": "bool",
+        "description": "LWRITE_MMN_AMN=.TRUE. tells the VASP2WANNIER90 interface to write the wannier90.mmn and wannier90.amn files.",
+        "url": "https://www.vasp.at/wiki/index.php/LWRITE_MMN_AMN"
+    },
+    "LWRITE_UNK": {
+        "type": "bool",
+        "description": "LWRITE_UNK decides whether the cell-periodic part of the relevant Bloch functions is written.",
+        "url": "https://www.vasp.at/wiki/index.php/LWRITE_UNK"
+    },
+    "LWRITE_WANPROJ": {
+        "type": "bool",
+        "description": "LWRITE_WANPROJ determines whether the Wannier projection fille WANPROJ is written.",
+        "url": "https://www.vasp.at/wiki/index.php/LWRITE_WANPROJ"
+    },
+    "LWRTCUR": {
+        "type": "bool",
+        "description": "Write response of current to mag. field to file (NMR)"
+    },
+    "LWSWQ": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "LZEROZ": {
+        "type": "bool",
+        "description": "for LZEROZ=.TRUE. the z-component of the spin-spiral magnetisation density will be forced to be and to remain zero.",
+        "url": "https://www.vasp.at/wiki/index.php/LZEROZ"
+    },
+    "LZORA": {
+        "type": "bool",
+        "description": "Use ZORA approximation in linear-response NMR (NMR)"
+    },
+    "L_WR_MOMENTS": {
+        "type": "bool",
+        "description": "Undocumented parameter"
+    },
+    "MAGATOM": {
+        "type": "int",
+        "description": "Index of atom at which to place magnetic field (NMR)"
+    },
+    "MAGDIPOL": {
+        "type": "float_array",
+        "description": "3 floats | magnitude of magnetic dipole (NMR)"
+    },
+    "MAGMOM": {
+        "type": "float_array",
+        "description": "MAGMOM Specifies the initial magnetic moment for each atom, if and only if ICHARG=2, or if  ICHARG=1 and the CHGCAR file contains no magnetisation density",
+        "url": "https://www.vasp.at/wiki/index.php/MAGMOM"
+    },
+    "MAGPOS": {
+        "type": "float_array",
+        "description": "3 floats | position for magnetic moment w/ 'nucind' (NMR)"
+    },
+    "MAXLIE": {
+        "type": "int",
+        "description": "Max iterations in CRPA diagonalization routine"
+    },
+    "MAXMEM": {
+        "type": "int",
+        "description": "MAXMEM specifies the maximum memory one MPI rank will attempt to allocate (in MByte).\nSince, the default varies somewhat between VASP versions, it is safer to set this\nflag manually. Currently the flag is only inspected in few selected routines, such as\nthe GW or RPA routines that can use excessive amounts of memory. It is recommended to set\nMAXMEM to the available memory per core minus 200 Mbyte. For instance, if one node is equipped\nwith 12 Gbyte, and 6 MPI ranks share this memory, the recommended setting is 12*1024/6-200 = 1848.",
+        "url": "https://www.vasp.at/wiki/index.php/MAXMEM"
+    },
+    "MAXMIX": {
+        "type": "int",
+        "description": "MAXMIX specifies the maximum number steps stored in Broyden mixer (IMIX=4).",
+        "url": "https://www.vasp.at/wiki/index.php/MAXMIX"
+    },
+    "MAXPWAMP": {
+        "type": "float",
+        "description": "Undocumented HF parameter"
+    },
+    "MBD_BETA": {
+        "type": "float",
+        "description": "TS MBD vdW correction damping parameter"
+    },
+    "MCALPHA": {
+        "type": "float_array",
+        "description": "10 floats | Undocumented HF parameter"
+    },
+    "MDALGO": {
+        "type": "int",
+        "description": "MDALGO specifies the molecular dynamics simulation protocol (in case IBRION=0 and VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/MDALGO"
+    },
+    "METAGGA": {
+        "type": "str",
+        "description": "selects a meta-GGA functional.",
+        "url": "https://www.vasp.at/wiki/index.php/METAGGA"
+    },
+    "MINROT": {
+        "type": "float",
+        "description": "The flag MINROT defines the value for which the dimer is rotated only if the predicted rotation angle is greater than MINROT (rad.) in the Improved Dimer Method.",
+        "url": "https://www.vasp.at/wiki/index.php/MINROT"
+    },
+    "MIXFIRST": {
+        "type": "bool",
+        "description": "Mix before diagonalization"
+    },
+    "MIXPRE": {
+        "type": "int",
+        "description": "MIXPRE specifies the metric in the Broyden mixing scheme(IMIX=4).",
+        "url": "https://www.vasp.at/wiki/index.php/MIXPRE"
+    },
+    "ML_AFILT2": {
+        "type": "float",
+        "description": "This tag sets the filtering parameter for the angular filtering for ML_IAFILT2 in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_AFILT2"
+    },
+    "ML_CDOUB": {
+        "type": "float",
+        "description": "This tag controls the criterion for \"enforced\" DFT calculations within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_CDOUB"
+    },
+    "ML_CSIG": {
+        "type": "float",
+        "description": "Parameter used in the automatic determination of threshold ML_CTIFOR for Bayesian error estimation in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_CSIG"
+    },
+    "ML_CSLOPE": {
+        "type": "float",
+        "description": "Parameter used in the automatic determination of threshold for Bayesian error estimation in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_CSLOPE"
+    },
+    "ML_CTIFOR": {
+        "type": "float",
+        "description": "This flag sets the threshold for the Bayesian error estimation on the force within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_CTIFOR"
+    },
+    "ML_CX": {
+        "type": "float",
+        "description": "The parameter determines how the  threshold  (ML_CTIFOR) is updated within the machine learning force field methods.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_CX"
+    },
+    "ML_EATOM_REF": {
+        "type": "float_array",
+        "description": "Reference total energies of isolated atoms used in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_EATOM_REF"
+    },
+    "ML_EPS_LOW": {
+        "type": "float",
+        "description": "Threshold for the CUR algorithm used in the sparsification of local reference configurations within the machine learning force fields.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_EPS_LOW"
+    },
+    "ML_EPS_REG": {
+        "type": "float",
+        "description": "Initial value for the threshold of the eigenvalues of the covariance matrix in the evidence approximation.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_EPS_REG"
+    },
+    "ML_FF_EATOM": {
+        "type": "str",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_ISTART": {
+        "type": "int",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_LMAX2_MB": {
+        "type": "int",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_LMLFF": {
+        "type": "bool",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_LNORM1_MB": {
+        "type": "bool",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_LNORM2_MB": {
+        "type": "bool",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_MRB1_MB": {
+        "type": "int",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_MRB2_MB": {
+        "type": "int",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_RCUT1_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_RCUT2_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_SION1_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_SION2_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_W1_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_FF_W2_MB": {
+        "type": "float",
+        "description": "Undocumented variable"
+    },
+    "ML_LAFILT2": {
+        "type": "bool",
+        "description": "This tag specifies whether angular filtering is applied or not within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_LAFILT2"
+    },
+    "ML_LMAX2": {
+        "type": "int",
+        "description": "This tag specifies the maximum angular momentum quantum number $L_{\\max}$ of spherical harmonics used to expand atomic distributions within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_LMAX2"
+    },
+    "ML_LMLFF": {
+        "type": "bool",
+        "description": "Main control tag which enables/disables the use of machine learning force fields.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_LMLFF"
+    },
+    "ML_LSPARSDES": {
+        "type": "bool",
+        "description": "This tag specifies whether angular descriptor sparsification is enabled within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_LSPARSDES"
+    },
+    "ML_MB": {
+        "type": "int",
+        "description": "This tag sets the maximum number of local reference configurations in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MB"
+    },
+    "ML_MCONF": {
+        "type": "int",
+        "description": "This tag sets the maximum number of structures stored in memory which are used for training in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MCONF"
+    },
+    "ML_MCONF_NEW": {
+        "type": "int",
+        "description": "This tag sets the number of configurations that are stored temporarily as candidates for the training data in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MCONF_NEW"
+    },
+    "ML_MHIS": {
+        "type": "int",
+        "description": "This tag sets the number of estimated errors stored in memory to determine the threshold for the Bayesian error in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MHIS"
+    },
+    "ML_MRB1": {
+        "type": "int",
+        "description": "This tag sets the number $N_{\\text{R}}^{0}$ of radial basis functions used to expand the radial descriptor $\\rho_{i}^{(2)}(r)$ within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MRB1"
+    },
+    "ML_MRB2": {
+        "type": "int",
+        "description": "This tag sets the number $N_{\\text{R}}^{l}$ (for all $l$) of radial basis functions used to expand the angular descriptor within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_MRB2"
+    },
+    "ML_NATOM_COUPLED": {
+        "type": "int",
+        "description": "This tag specifies the number of atoms for which a coupling parameter is introduced to calculate the chemical potential within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_NATOM_COUPLED"
+    },
+    "ML_NHYP": {
+        "type": "int",
+        "description": "This tag specifies the polynomial power $\\zeta$ of the kernel within the machine learning force field method (see this section).",
+        "url": "https://www.vasp.at/wiki/index.php/ML_NHYP"
+    },
+    "ML_NMDINT": {
+        "type": "int",
+        "description": "Tag to control the minimum interval to get training samples in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_NMDINT"
+    },
+    "ML_NRANK_SPARSDES": {
+        "type": "int",
+        "description": "This tag sets the number of highest eigenvalues to which the correlation is measured within the angular descriptor sparsification (within the machine learning force field method).",
+        "url": "https://www.vasp.at/wiki/index.php/ML_NRANK_SPARSDES"
+    },
+    "ML_RCOUPLE": {
+        "type": "float",
+        "description": "This tag specifies the value of the coupling parameter for the calculation of the chemical potential within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_RCOUPLE"
+    },
+    "ML_RCUT1": {
+        "type": "float",
+        "description": "This flag sets the cutoff radius $R_{\\text{cut}}$ for the radial descriptor $\\rho_{i}^{(2)}(r)$ in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_RCUT1"
+    },
+    "ML_RCUT2": {
+        "type": "float",
+        "description": "This flag sets the cutoff radius $R_{\\text{cut}}$ for the angular descriptor $\\rho_{i}^{(3)}(r)$ in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_RCUT2"
+    },
+    "ML_RDES_SPARSDES": {
+        "type": "float",
+        "description": "This tag sets the ratio of the selected to the total number of descriptors within the angular descriptor sparsification (within the machine learning force field method).",
+        "url": "https://www.vasp.at/wiki/index.php/ML_RDES_SPARSDES"
+    },
+    "ML_SIGV0": {
+        "type": "float",
+        "description": "This flag sets the initial reversed and squared noise parameter ${\\frac{1}{\\sigma_{\\mathrm{v}}^{2}}}$ in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_SIGV0"
+    },
+    "ML_SIGW0": {
+        "type": "float",
+        "description": "This flag sets the initial reversed and squared precision parameter ${\\frac{1}{\\sigma_{\\mathrm{w}}^{2}}}$ in the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_SIGW0"
+    },
+    "ML_SION1": {
+        "type": "float",
+        "description": "This tag specifies the width $\\sigma_{\\text{atom}}$ of the Gaussian functions used for broadening the atomic distributions of the radial descriptor $\\rho_{i}^{(2)}(r)$ within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_SION1"
+    },
+    "ML_SION2": {
+        "type": "float",
+        "description": "This tag specifies the width $\\sigma_{\\text{atom}}$ of the Gaussian functions used for broadening the atomic distributions of the angular descriptor $\\rho_{i}^{(3)}(r)$ within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_SION2"
+    },
+    "ML_W1": {
+        "type": "float",
+        "description": "This tag defines the weight $\\beta$ for the radial (and angular) descriptor within the machine learning force field method (see this section).",
+        "url": "https://www.vasp.at/wiki/index.php/ML_W1"
+    },
+    "ML_WTIFOR": {
+        "type": "float",
+        "description": "This tag sets the weight for the scaling of the forces in the training data within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_WTIFOR"
+    },
+    "ML_WTOTEN": {
+        "type": "float",
+        "description": "This tag sets the weight for the scaling of the total energy in the training data within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_WTOTEN"
+    },
+    "ML_WTSIF": {
+        "type": "float",
+        "description": "This tag sets the weight for the scaling of the stress in the training data within the machine learning force field method.",
+        "url": "https://www.vasp.at/wiki/index.php/ML_WTSIF"
+    },
+    "MODEL_ALPHA": {
+        "type": "float",
+        "description": "Undocumented HF parameter"
+    },
+    "MODEL_EPS0": {
+        "type": "float",
+        "description": "Undocumented HF parameter"
+    },
+    "MODEL_GW": {
+        "type": "int",
+        "description": "Undocumented HF parameter"
+    },
+    "MREMOVE": {
+        "type": "int",
+        "description": "Undocumented mixing parameter"
+    },
+    "M_CONSTR": {
+        "type": "float_array",
+        "description": "M_CONSTR specifies the desired local magnetic moment (size and/or direction) for the constrained local moments approach.",
+        "url": "https://www.vasp.at/wiki/index.php/M_CONSTR"
+    },
+    "NATURALO": {
+        "type": "int",
+        "description": "calculate RPA natural orbitals.",
+        "url": "https://www.vasp.at/wiki/index.php/NATURALO"
+    },
+    "NBANDS": {
+        "type": "int",
+        "description": "NBANDS determines the actual number of bands in the calculation.",
+        "url": "https://www.vasp.at/wiki/index.php/NBANDS"
+    },
+    "NBANDSEXACT": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NBANDSGW": {
+        "type": "int",
+        "description": "The flag determines how many QP energies are calculated and updated in GW type calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/NBANDSGW"
+    },
+    "NBANDSGWLOW": {
+        "type": "int",
+        "description": "Number of bands for which shifts are calculated"
+    },
+    "NBANDSLF": {
+        "type": "int",
+        "description": "Number of bands included in local field effect calc."
+    },
+    "NBANDSO": {
+        "type": "int",
+        "description": "NBANDSO determines how many occupied orbitals are included in the \nCasida/BSE calculations or timepropagation",
+        "url": "https://www.vasp.at/wiki/index.php/NBANDSO"
+    },
+    "NBANDSV": {
+        "type": "int",
+        "description": "NBANDSV determines how many unoccupied orbitals are included in the Casida/BSE calculations or timepropagation.",
+        "url": "https://www.vasp.at/wiki/index.php/NBANDSV"
+    },
+    "NBANDS_INDEX": {
+        "type": "int_array",
+        "description": "nbands_out ints | Undocumented QP parameter"
+    },
+    "NBANDS_OUT": {
+        "type": "int",
+        "description": "Undocumented QP parameter"
+    },
+    "NBCONOPT": {
+        "type": "int",
+        "description": "Number of conduction bands to write in OPTICS file"
+    },
+    "NBLK": {
+        "type": "int",
+        "description": "NBLK determines the blocking factor in many BLAS level 3 routines.",
+        "url": "https://www.vasp.at/wiki/index.php/NBLK"
+    },
+    "NBLOCK": {
+        "type": "int",
+        "description": "After NBLOCK  ionic steps the pair correlation function and the DOS are calculated\nand the ionic configuration is written to the XDATCAR-file. It is recommended to leave  NBLOCK to 1, since the computational overhead to determine the DOS and pair correlation function is minimal. Only for  molecular dynamics simulations with many 1000 steps, it might be expedient to increase NBLOCK to say 10, to avoid large XDATCAR-files.",
+        "url": "https://www.vasp.at/wiki/index.php/NBLOCK"
+    },
+    "NBLOCK_FOCK": {
+        "type": "int",
+        "description": "blocking factor in FOCK_ACC"
+    },
+    "NBMOD": {
+        "type": "int",
+        "description": "Controls which bands are used in the calculation of Band decomposed charge densities. Check also IBAND and EINT.",
+        "url": "https://www.vasp.at/wiki/index.php/NBMOD"
+    },
+    "NBSEEIG": {
+        "type": "int",
+        "description": "NBSEEIG sets the number number of BSE eigenvectors written to the BSEFATBAND output file.",
+        "url": "https://www.vasp.at/wiki/index.php/NBSEEIG"
+    },
+    "NBVALOPT": {
+        "type": "int",
+        "description": "Number of valence bands to write in OPTICS file"
+    },
+    "NCORE": {
+        "type": "int",
+        "description": "NCORE determines the number of compute cores that work on an individual orbital (available as of VASP.5.2.13).",
+        "url": "https://www.vasp.at/wiki/index.php/NCORE"
+    },
+    "NCORES_PER_BAND": {
+        "type": "str",
+        "description": "Undocumented parameter"
+    },
+    "NCORE_IN_IMAGE1": {
+        "type": "int",
+        "description": "This tag specifies the number of cores in the first image.",
+        "url": "https://www.vasp.at/wiki/index.php/NCORE_IN_IMAGE1"
+    },
+    "NCRPA_BANDS": {
+        "type": "int_array",
+        "description": "Controls which bands are excluded in CRPA. Check also NTARGET_STATES.",
+        "url": "https://www.vasp.at/wiki/index.php/NCRPA_BANDS"
+    },
+    "NCSHMEM": {
+        "type": "str",
+        "description": "Share memory between this many cores on each process"
+    },
+    "NEDOS": {
+        "type": "int",
+        "description": "NEDOS specifies number of gridpoints on which the DOS is evaluated",
+        "url": "https://www.vasp.at/wiki/index.php/NEDOS"
+    },
+    "NELECT": {
+        "type": "float",
+        "description": "NELECT sets the number of electrons.",
+        "url": "https://www.vasp.at/wiki/index.php/NELECT"
+    },
+    "NELM": {
+        "type": "int",
+        "description": "NELM sets the maximum number of electronic SC (selfconsistency) steps which may be performed.",
+        "url": "https://www.vasp.at/wiki/index.php/NELM"
+    },
+    "NELMALL": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NELMDL": {
+        "type": "int",
+        "description": "NELMDL specifies the number of non-selfconsistent steps at the beginning.",
+        "url": "https://www.vasp.at/wiki/index.php/NELMDL"
+    },
+    "NELMGW": {
+        "type": "int",
+        "description": "NELMGW sets the number of self-consistent GW steps.\nAvailable as of 6.3.0.",
+        "url": "https://www.vasp.at/wiki/index.php/NELMGW"
+    },
+    "NELMHF": {
+        "type": "int",
+        "description": "Number of iterations for HF part (GW)"
+    },
+    "NELMIN": {
+        "type": "int",
+        "description": "NELMIN specifies the minimum number of electronic SCF steps.",
+        "url": "https://www.vasp.at/wiki/index.php/NELMIN"
+    },
+    "NFREE": {
+        "type": "int",
+        "description": "depending on IBRION, NFREE specifies the number of remembered steps in the history of ionic convergence runs, or the number of ionic displacements in frozen phonon calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/NFREE"
+    },
+    "NGAUS": {
+        "type": "int",
+        "description": "Undocumented charge fitting parameter"
+    },
+    "NGX": {
+        "type": "int",
+        "description": "NGX sets the number of grid points in the FFT-grid along the first lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGX"
+    },
+    "NGXF": {
+        "type": "int",
+        "description": "NGXF sets the number of grid points in the \"fine\" FFT-grid along the first lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGXF"
+    },
+    "NGY": {
+        "type": "int",
+        "description": "NGY sets the number of grid points in the FFT-grid along the second lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGY"
+    },
+    "NGYF": {
+        "type": "int",
+        "description": "NGYF sets the number of grid points in the \"fine\" FFT-grid along the second lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGYF"
+    },
+    "NGYROMAG": {
+        "type": "float_array",
+        "description": "NGYROMAG specifies the nuclear gyromagnetic ratios (in MHz, for H0 = 1 T) for the atomic types on the POTCAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/NGYROMAG"
+    },
+    "NGZ": {
+        "type": "int",
+        "description": "NGZ sets the number of grid points in the FFT-grid along the third lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGZ"
+    },
+    "NGZF": {
+        "type": "int",
+        "description": "NGZF sets the number of grid points in the \"fine\" FFT-grid along the first lattice vector.",
+        "url": "https://www.vasp.at/wiki/index.php/NGZF"
+    },
+    "NKOFFOPT": {
+        "type": "int",
+        "description": "K-point \"counter offset\" for Optics"
+    },
+    "NKOPT": {
+        "type": "int",
+        "description": "Number of k-points to include in Optics calculation"
+    },
+    "NKRED": {
+        "type": "int",
+        "description": "NKRED specifies an uniform reduction factor for the q-point grid representation of the exact exchange potential and the correlation part in GW calculations.",
+        "url": "https://www.vasp.at/wiki/index.php/NKRED"
+    },
+    "NKREDLF": {
+        "type": "int",
+        "description": "Reduce k-points for local field effects"
+    },
+    "NKREDLFX": {
+        "type": "int",
+        "description": "Reduce k-points for local field effects in X"
+    },
+    "NKREDX": {
+        "type": "int",
+        "description": "NKREDX specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b1.",
+        "url": "https://www.vasp.at/wiki/index.php/NKREDX"
+    },
+    "NKREDY": {
+        "type": "int",
+        "description": "NKREDY specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b2.",
+        "url": "https://www.vasp.at/wiki/index.php/NKREDY"
+    },
+    "NKREDZ": {
+        "type": "int",
+        "description": "NKREDZ specifies a reduction factor for the q-point grid representation of the exact exchange potential along reciprocal space direction b3.",
+        "url": "https://www.vasp.at/wiki/index.php/NKREDZ"
+    },
+    "NLSPLINE": {
+        "type": "bool",
+        "description": "construct the PAW projectors in reciprocal space using spline interpolation so that they are k-differentiable.",
+        "url": "https://www.vasp.at/wiki/index.php/NLSPLINE"
+    },
+    "NMAXFOCKAE": {
+        "type": "int",
+        "description": "NMAXFOCKAE and LMAXFOCKAE determine whether \nthe overlap densities in the Fock exchange and correlated wave function methods are accurately reconstructed on the plane wave grid. This flag generally only applies to the Fock-exchange part as well as many-body\npost DFT methods (GW, RPA, MP2, etc.).",
+        "url": "https://www.vasp.at/wiki/index.php/NMAXFOCKAE"
+    },
+    "NMIN": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NOMEGA": {
+        "type": "int",
+        "description": "NOMEGA specifies the number of (imaginary) frequency and imaginary time grid points.",
+        "url": "https://www.vasp.at/wiki/index.php/NOMEGA"
+    },
+    "NOMEGAPAR": {
+        "type": "int",
+        "description": "NOMEGAPAR available as of VASP.6, specifies the number of processor groups sharing the same imaginary frequency grid points.",
+        "url": "https://www.vasp.at/wiki/index.php/NOMEGAPAR"
+    },
+    "NOMEGAR": {
+        "type": "int",
+        "description": "NOMEGAR specifies the number of frequency grid points along the real axis.",
+        "url": "https://www.vasp.at/wiki/index.php/NOMEGAR"
+    },
+    "NPACO": {
+        "type": "int",
+        "description": "NPACO sets the number of slots in the pair-correlation function written to PCDAT.",
+        "url": "https://www.vasp.at/wiki/index.php/NPACO"
+    },
+    "NPAR": {
+        "type": "int",
+        "description": "NPAR determines the number of bands that are treated in parallel.",
+        "url": "https://www.vasp.at/wiki/index.php/NPAR"
+    },
+    "NPPSTR": {
+        "type": "int",
+        "description": "NPPSTR specifies the number of k-points on the strings in the IGPAR direction.",
+        "url": "https://www.vasp.at/wiki/index.php/NPPSTR"
+    },
+    "NREBOOT": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NRMM": {
+        "type": "int",
+        "description": "NRMM sets the maximum number of iterative steps for RMM-DIIS (IALGO=4X) or Davidson algorithms (IALGO=3X).",
+        "url": "https://www.vasp.at/wiki/index.php/NRMM"
+    },
+    "NSIM": {
+        "type": "int",
+        "description": "NSIM sets the number of bands that are optimized simultaneously by the RMM-DIIS algorithm.",
+        "url": "https://www.vasp.at/wiki/index.php/NSIM"
+    },
+    "NSTORB": {
+        "type": "int",
+        "description": "NSTORB specifies the number of stochastic orbitals per cycle in the stochastic MP2 algorithm.",
+        "url": "https://www.vasp.at/wiki/index.php/NSTORB"
+    },
+    "NSUBSYS": {
+        "type": "int_array",
+        "description": "NSUBSYS defines the atomic subsystems in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/NSUBSYS"
+    },
+    "NSW": {
+        "type": "int",
+        "description": "NSW sets the maximum number of ionic steps.",
+        "url": "https://www.vasp.at/wiki/index.php/NSW"
+    },
+    "NTARGET_STATES": {
+        "type": "int_array",
+        "description": "Controls which Wannier states are excluded in CRPA. Check also NCRPA_BANDS.",
+        "url": "https://www.vasp.at/wiki/index.php/NTARGET_STATES"
+    },
+    "NTAUPAR": {
+        "type": "int",
+        "description": "NTAUPAR available as of VASP.6, specifies the number of MPI groups sharing same imaginary time grid points. The default value of NTAUPAR is set automatically and depends on MAXMEM, the available memory for each rank on one node.",
+        "url": "https://www.vasp.at/wiki/index.php/NTAUPAR"
+    },
+    "NTEMPER": {
+        "type": "int",
+        "description": "Undocumented subspace diagonalization param. (GH patches)"
+    },
+    "NUCIND": {
+        "type": "bool",
+        "description": "Use nuclear independent calculation (NMR)"
+    },
+    "NUM_WANN": {
+        "type": "int",
+        "description": "Since vasp 6.2.0 NUM_WANN determines the number of Wannier orbitals to be used with wannier90. Note that the num_wann value written to the wannier90.win file is always the value of NUM_WANN known by vasp.",
+        "url": "https://www.vasp.at/wiki/index.php/NUM_WANN"
+    },
+    "NUPDOWN": {
+        "type": "float",
+        "description": "Sets the difference between the number of electrons in the up and down spin components.",
+        "url": "https://www.vasp.at/wiki/index.php/NUPDOWN"
+    },
+    "NWHIGH": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NWLOW": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "NWRITE": {
+        "type": "int",
+        "description": "This flag determines how much will be written to the file OUTCAR ('verbosity flag').",
+        "url": "https://www.vasp.at/wiki/index.php/NWRITE"
+    },
+    "ODDONLY": {
+        "type": "bool",
+        "description": "ODDONLY=.TRUE. selects a subset of k-points for the representation of the Fock exchange potential, with C1=C2=C3=1, and n1+n2+n3 odd.",
+        "url": "https://www.vasp.at/wiki/index.php/ODDONLY"
+    },
+    "ODDONLYGW": {
+        "type": "bool",
+        "description": "ODDONLYGW allows to avoid the inclusion of the $\\Gamma$ point in the evaluation of response functions (in GW calculations).",
+        "url": "https://www.vasp.at/wiki/index.php/ODDONLYGW"
+    },
+    "OFIELD_A": {
+        "type": "float",
+        "description": "The flag OFIELD_A sets the desired order parameter $Q_{6}$ in the Interface pinning method.",
+        "url": "https://www.vasp.at/wiki/index.php/OFIELD_A"
+    },
+    "OFIELD_K": {
+        "type": "float_array",
+        "description": "3 floats | Undocumented parameter"
+    },
+    "OFIELD_KAPPA": {
+        "type": "float",
+        "description": "The flag OFIELD_KAPPA sets the strength of bias potential in ${\\textrm{eV}}/({\\textrm{unit}}{\\textrm{of}}Q)^{2}$ in the Interface pinning method.",
+        "url": "https://www.vasp.at/wiki/index.php/OFIELD_KAPPA"
+    },
+    "OFIELD_Q6_FAR": {
+        "type": "float",
+        "description": "The flag OFIELD_Q6_FAR sets the far fading distance (in $\\mathrm{\\AA}$) for the computation of a continuous $Q_{6}$ parameter in the Interface pinning method.",
+        "url": "https://www.vasp.at/wiki/index.php/OFIELD_Q6_FAR"
+    },
+    "OFIELD_Q6_NEAR": {
+        "type": "float",
+        "description": "The flag OFIELD_Q6_NEAR sets the near fading distance (in $\\mathrm{\\AA}$) for the computation of a continuous $Q_{6}$ parameter in the Interface pinning method.",
+        "url": "https://www.vasp.at/wiki/index.php/OFIELD_Q6_NEAR"
+    },
+    "OMEGAGRID": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "OMEGAMAX": {
+        "type": "float",
+        "description": "OMEGAMAX specifies the maximum frequency for the dense part of the frequency grid for GW calculations (old GW code, does not apply to GWR). \nFor CRPA calculations, OMEGAMAX is the frequency point of the interaction. \nFor BSE calculations OMEGAMAX determines the maximum energy difference for excitation pairs to be included. Since the flag controls different aspects of the code, be careful when setting it (and remember to remove the tag, when you change the type of calculations).",
+        "url": "https://www.vasp.at/wiki/index.php/OMEGAMAX"
+    },
+    "OMEGAMIN": {
+        "type": "float",
+        "description": "OMEGAMAX minimum frequency in the frequency grid.",
+        "url": "https://www.vasp.at/wiki/index.php/OMEGAMIN"
+    },
+    "OMEGATL": {
+        "type": "float",
+        "description": "OMEGATL specifies the maximum frequency for coarse part of the frequency grid.",
+        "url": "https://www.vasp.at/wiki/index.php/OMEGATL"
+    },
+    "ORBITALMAG": {
+        "type": "bool",
+        "description": "Enable orbital magnetization (NMR)"
+    },
+    "PARAM1": {
+        "type": "float",
+        "description": "The flag PARAM1 determines the first parameter used in the enhancement factor of the optPBE-vdW and optB88-vdW functional.",
+        "url": "https://www.vasp.at/wiki/index.php/PARAM1"
+    },
+    "PARAM2": {
+        "type": "float",
+        "description": "The flag PARAM2 determines the second parameter used in the enhancement factor of the optPBE-vdW and optB88-vdW functional.",
+        "url": "https://www.vasp.at/wiki/index.php/PARAM2"
+    },
+    "PFLAT": {
+        "type": "bool",
+        "description": "Control flag for the output of the profiling routines.",
+        "url": "https://www.vasp.at/wiki/index.php/PFLAT"
+    },
+    "PHON_LBOSE": {
+        "type": "bool",
+        "description": "This flag determines whether random structures in the Monte-Carlo (MC) sampling are created according to Bose-Einstein or Maxwell-Boltzmann statistics.",
+        "url": "https://www.vasp.at/wiki/index.php/PHON_LBOSE"
+    },
+    "PHON_LMC": {
+        "type": "bool",
+        "description": "This flag controls whether electron-phonon interactions from Monte-Carlo sampling are calculated or not.",
+        "url": "https://www.vasp.at/wiki/index.php/PHON_LMC"
+    },
+    "PHON_NSTRUCT": {
+        "type": "int",
+        "description": "This flag sets the number of structures for electron-phonon interactions from Monte-Carlo (MC) sampling.",
+        "url": "https://www.vasp.at/wiki/index.php/PHON_NSTRUCT"
+    },
+    "PHON_NTLIST": {
+        "type": "int",
+        "description": "This flag sets the number temperatures for that the electron-phonon interactions using the ZG configuration[1] is evaluated.",
+        "url": "https://www.vasp.at/wiki/index.php/PHON_NTLIST"
+    },
+    "PHON_TLIST": {
+        "type": "float_array",
+        "description": "This flag provides the list of temperatures for that the electron-phonon interactions using the ZG configuration[1] is evaluated.",
+        "url": "https://www.vasp.at/wiki/index.php/PHON_TLIST"
+    },
+    "PLEVEL": {
+        "type": "int",
+        "description": "Control flag for the output of the profiling routines.",
+        "url": "https://www.vasp.at/wiki/index.php/PLEVEL"
+    },
+    "PMASS": {
+        "type": "float",
+        "description": "PMASS assigns a fictitious mass (in amu) to the lattice degrees-of-freedom in case of Parrinello-Rahman dynamics (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/PMASS"
+    },
+    "POMASS": {
+        "type": "float",
+        "description": "POMASS describes the mass of each atomic sphere in atomic units.",
+        "url": "https://www.vasp.at/wiki/index.php/POMASS"
+    },
+    "POTIM": {
+        "type": "float",
+        "description": "POTIM sets the time step in molecular dynamics or the step width in ionic relaxations.",
+        "url": "https://www.vasp.at/wiki/index.php/POTIM"
+    },
+    "PREC": {
+        "type": "str",
+        "description": "PREC specifies the \"precision\"-mode.",
+        "url": "https://www.vasp.at/wiki/index.php/PREC"
+    },
+    "PRECFOCK": {
+        "type": "str",
+        "description": "PRECFOCK controls the FFT grids used in the exact exchange routines (Hartree-Fock and hybrid functionals).",
+        "url": "https://www.vasp.at/wiki/index.php/PRECFOCK"
+    },
+    "PROUTINE": {
+        "type": "int",
+        "description": "Control flag for the output of the profiling routines.",
+        "url": "https://www.vasp.at/wiki/index.php/PROUTINE"
+    },
+    "PSTRESS": {
+        "type": "float",
+        "description": "This flag controls whether Pulay corrections are added to the stress tensor or not. In molecular dynamics calculations it controls the pressure.",
+        "url": "https://www.vasp.at/wiki/index.php/PSTRESS"
+    },
+    "PSUBSYS": {
+        "type": "float_array",
+        "description": "PSUBSYS sets the collision probabilities for the atoms in each atomic subsystem in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/PSUBSYS"
+    },
+    "PTHRESHOLD": {
+        "type": "float",
+        "description": "Control flag for the output of the profiling routines.",
+        "url": "https://www.vasp.at/wiki/index.php/PTHRESHOLD"
+    },
+    "QMAXFOCKAE": {
+        "type": "float_array",
+        "description": "The parameter QMAXFOCKAE controls at which wave vectors the local augmentation \ncharges are fitted to obtain an accurate charge augmentation on the plane wave grid.",
+        "url": "https://www.vasp.at/wiki/index.php/QMAXFOCKAE"
+    },
+    "QSPIRAL": {
+        "type": "float_array",
+        "description": "the QSPIRAL-tag specifies the spin spiral propagation vector.",
+        "url": "https://www.vasp.at/wiki/index.php/QSPIRAL"
+    },
+    "QUAD_EFG": {
+        "type": "float_array",
+        "description": "nuclear quadrupole moment (in millbarn) for the atomic types on the POTCAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/QUAD_EFG"
+    },
+    "RADEQ": {
+        "type": "str",
+        "description": "Which type of radial equations to use for rel. core calcs."
+    },
+    "RANDOM_SEED": {
+        "type": "int_array",
+        "description": "RANDOM_SEED specifies the seed of the random-number-generator (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/RANDOM_SEED"
+    },
+    "RCMIX": {
+        "type": "float",
+        "description": "Mixing parameter for core density in rel. core calcs."
+    },
+    "RCNDL": {
+        "type": "int",
+        "description": "Wait this many steps before updating core density"
+    },
+    "RCREP": {
+        "type": "int",
+        "description": "Number of steps between printing relaxed core info"
+    },
+    "RCRHOCUT": {
+        "type": "float_array",
+        "description": "ntyp floats | Core density cutoff rad. for HF relcore calc"
+    },
+    "RCSTRD": {
+        "type": "int",
+        "description": "Relax core density after this many SCF steps"
+    },
+    "RESTARTCG": {
+        "type": "int",
+        "description": "Undocumented dimer parameter"
+    },
+    "RGAUS": {
+        "type": "float_array",
+        "description": "? floats | Undocumented charge fitting parameter"
+    },
+    "ROPT": {
+        "type": "float_array",
+        "description": "ROPT determines how accurately the projectors are represented in real space. If LREAL=Auto is used, ROPT will be internally set to negative values. If LREAL=On is used, ROPT will be internally set to positive values. Whether the user supplies negative or positive values in the INCAR file is irrelevant. LREAL=On is outdated and should be only used, if compatibility to old calculations is desired. For LREAL=On, the real space projectors are optimized using an algorithm proposed by King-Smith et al.[1] For the recommended LREAL=Auto, an unpublished scheme[2] is used. This scheme is considerably more accurate resulting in more localized projector functions than for the King-Smith et al. method.",
+        "url": "https://www.vasp.at/wiki/index.php/ROPT"
+    },
+    "RTIME": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "RWIGS": {
+        "type": "float_array",
+        "description": "RWIGS specifies the Wigner-Seitz radius (in $\\mathrm{\\AA}$) for each atom type.",
+        "url": "https://www.vasp.at/wiki/index.php/RWIGS"
+    },
+    "SAXIS": {
+        "type": "float_array",
+        "description": "SAXIS specifies the quantisation axis for noncollinear spins.",
+        "url": "https://www.vasp.at/wiki/index.php/SAXIS"
+    },
+    "SCALEE": {
+        "type": "float",
+        "description": "This tag specifies the coupling parameter of the energies and forces between a fully interacting system and a reference system.",
+        "url": "https://www.vasp.at/wiki/index.php/SCALEE"
+    },
+    "SCALING": {
+        "type": "int",
+        "description": "After how many steps velocities should be rescaled"
+    },
+    "SCISSOR": {
+        "type": "float",
+        "description": "Scissor correction for GW/BSE calcs"
+    },
+    "SCSRAD": {
+        "type": "float",
+        "description": "SCSRAD defines the cutoff radius (in $\\mathrm{\\AA}$) used in the calculation of $\\$\\tau_{ij}\\$$ within the Tkatchenko-Scheffler method Self-consistent screening in Tkatchenko-Scheffler method.",
+        "url": "https://www.vasp.at/wiki/index.php/SCSRAD"
+    },
+    "SHAKEMAXITER": {
+        "type": "int",
+        "description": "SHAKEMAXITER specifies the maximum number of iterations in the SHAKE algorithm (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/SHAKEMAXITER"
+    },
+    "SHAKESCA": {
+        "type": "float",
+        "description": "Scaling of each step taken in SHAKE algorithm"
+    },
+    "SHAKETOL": {
+        "type": "float",
+        "description": "SHAKETOL specifies the tolerance for the SHAKE algorithm (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/SHAKETOL"
+    },
+    "SHAKETOLSOFT": {
+        "type": "float",
+        "description": "Soft tolerance for SHAKE algorithm"
+    },
+    "SIGMA": {
+        "type": "float",
+        "description": "SIGMA specifies the width of the smearing in eV.",
+        "url": "https://www.vasp.at/wiki/index.php/SIGMA"
+    },
+    "SKIP_EDOTP": {
+        "type": "bool",
+        "description": "Skip updating elec. polarization during scf"
+    },
+    "SKIP_SCF": {
+        "type": "bool",
+        "description": "Skip calculation w/ local field effects"
+    },
+    "SMASS": {
+        "type": "float",
+        "description": "SMASS controls the velocities during an ab-initio molecular dynamics run.",
+        "url": "https://www.vasp.at/wiki/index.php/SMASS"
+    },
+    "SMEARINGS": {
+        "type": "int_array",
+        "description": "SMEARINGS defines the smearing parameters for ISMEAR=-3 in the calculation of the partial occupancies.",
+        "url": "https://www.vasp.at/wiki/index.php/SMEARINGS"
+    },
+    "SPRING": {
+        "type": "int",
+        "description": "SPRING gives the spring constant between the images as used in the elastic band method.",
+        "url": "https://www.vasp.at/wiki/index.php/SPRING"
+    },
+    "SPRING_K": {
+        "type": "float_array",
+        "description": "? floats | Spring constant for harmonic constraints"
+    },
+    "SPRING_R0": {
+        "type": "float_array",
+        "description": "? floats | Spring minima for harmonic constraints"
+    },
+    "SPRING_V0": {
+        "type": "float_array",
+        "description": "? floats | Initial velocity of harmonic constraints"
+    },
+    "STEP_MAX": {
+        "type": "float",
+        "description": "The flag STEP_MAX defines the trust radius (upper limit) for the optimization step (in $\\mathrm{\\AA}$ ) in the Improved Dimer Method.",
+        "url": "https://www.vasp.at/wiki/index.php/STEP_MAX"
+    },
+    "STEP_SIZE": {
+        "type": "float",
+        "description": "The flag STEP_SIZE defines the trial step size for the optimization step (in $\\mathrm{\\AA}$ ) in the Improved Dimer Method.",
+        "url": "https://www.vasp.at/wiki/index.php/STEP_SIZE"
+    },
+    "STM": {
+        "type": "float_array",
+        "description": "7 floats | \"range for STM data\""
+    },
+    "SWITCH": {
+        "type": "int",
+        "description": "Undocumented dimer parameter"
+    },
+    "SYMPREC": {
+        "type": "float",
+        "description": "SYMPREC determines to which accuracy the positions in the POSCAR file must be specified (as of VASP.4.4.4).",
+        "url": "https://www.vasp.at/wiki/index.php/SYMPREC"
+    },
+    "SYSTEM": {
+        "type": "str",
+        "description": "The \"title string\" defined by SYSTEM is for the user only and should help the user to identify what he/she wants to do with this specific input file.",
+        "url": "https://www.vasp.at/wiki/index.php/SYSTEM"
+    },
+    "TAU0": {
+        "type": "float",
+        "description": "Undocumented charge fitting parameter"
+    },
+    "TEBEG": {
+        "type": "float",
+        "description": "TEBEG sets the start temperature for an ab-initio molecular dynamics run (IBRION=0) and other routines (e.g. Electron-phonon interactions from Monte-Carlo sampling).",
+        "url": "https://www.vasp.at/wiki/index.php/TEBEG"
+    },
+    "TEEND": {
+        "type": "float",
+        "description": "TEEND sets the final temperature for an ab-initio molecular dynamics run (IBRION=0; SMASS=\u22121).",
+        "url": "https://www.vasp.at/wiki/index.php/TEEND"
+    },
+    "TELESCOPE": {
+        "type": "int",
+        "description": "Undocumented parameter"
+    },
+    "THERMOSTAT": {
+        "type": "int",
+        "description": "Deprecated parameter for selecting MD method (use MDALGO)"
+    },
+    "TIME": {
+        "type": "float",
+        "description": "TIME controls the time step for IALGO=5X and for the initial (steepest descent) phase of IALGO=4X.",
+        "url": "https://www.vasp.at/wiki/index.php/TIME"
+    },
+    "TSUBSYS": {
+        "type": "float_array",
+        "description": "TSUBSYS sets the temperatures for the atomic subsystems in calculations with multiple Anderson thermostats (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/TSUBSYS"
+    },
+    "TURBO": {
+        "type": "int",
+        "description": "Ewald, 0 = Normal, 1 = PME"
+    },
+    "VALUE_MAX": {
+        "type": "float_array",
+        "description": "VALUE_MAX sets the upper limits for the monitoring of geometric parameters (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/VALUE_MAX"
+    },
+    "VALUE_MIN": {
+        "type": "float_array",
+        "description": "VALUE_MIN sets the lower limits for the monitoring of geometric parameters (in case VASP was compiled with -Dtbdyn).",
+        "url": "https://www.vasp.at/wiki/index.php/VALUE_MIN"
+    },
+    "VCA": {
+        "type": "float_array",
+        "description": "VCA is short for the virtual crystal approximation; the tag allows to \"weight\" each species found in the POTCAR file.",
+        "url": "https://www.vasp.at/wiki/index.php/VCA"
+    },
+    "VCAIMAGES": {
+        "type": "float",
+        "description": "The tag VCAIMAGES allows to perform thermodynamic coupling constant integrations. To achive this two molecular dynamics simulations are performed with e.g. different POTCAR or KPOINTS files or different exchange-correlation functionals and force averaging between the two calculations is done[1].",
+        "url": "https://www.vasp.at/wiki/index.php/VCAIMAGES"
+    },
+    "VCUTOFF": {
+        "type": "float",
+        "description": "The parameter VCUTOFF sets the energy cutoff for bare Coulomb matrix elements and controls the basis set for the bare Coulomb interaction.",
+        "url": "https://www.vasp.at/wiki/index.php/VCUTOFF"
+    },
+    "VDW_A1": {
+        "type": "float",
+        "description": "VDW_A1 defines the damping function parameter $a_{1}$ in the DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_A1"
+    },
+    "VDW_A2": {
+        "type": "float",
+        "description": "VDW_A2 defines the damping function parameter $a_{2}$ in the DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_A2"
+    },
+    "VDW_ALPHA": {
+        "type": "float_array",
+        "description": "free-atomic polarizabilities (atomic units) for each species defined in the POSCAR file",
+        "url": "https://www.vasp.at/wiki/index.php/Tkatchenko-Scheffler_method"
+    },
+    "VDW_C6": {
+        "type": "float_array",
+        "description": "VDW_C6 defines the $C_{6}$ parameters ($\\mathrm{Jnm}^{6}\\mathrm{mol}^{-1}$) for each species defined in the POSCAR file within the DFT-D2 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_C6"
+    },
+    "VDW_C6AU": {
+        "type": "float_array",
+        "description": "free-atomic $C_{6}$ parameters (atomic units) for each species defined in the POSCAR file",
+        "url": "https://www.vasp.at/wiki/index.php/Tkatchenko-Scheffler_method"
+    },
+    "VDW_CNRADIUS": {
+        "type": "float",
+        "description": "VDW_CNRADIUS defines the cutoff radius (in $\\mathrm{\\AA}$) for the calculation of the coordination numbers used in the DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_CNRADIUS"
+    },
+    "VDW_D": {
+        "type": "float",
+        "description": "VDW_D defines the damping parameter $d$  in the DFT-D2method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_D"
+    },
+    "VDW_IDAMPF": {
+        "type": "int",
+        "description": "Select type of damping function for TS vdW"
+    },
+    "VDW_MBD_SIZE": {
+        "type": "int_array",
+        "description": "3 ints | Supercell size for TS MBD vdW correction"
+    },
+    "VDW_R0": {
+        "type": "float_array",
+        "description": "VDW_R0 defines the $R_{0}$ parameters ($\\mathrm{\\AA}$) for each species defined in the POSCAR file within the DFT-D2 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_R0"
+    },
+    "VDW_R0AU": {
+        "type": "float_array",
+        "description": "List of floats of R0 parameters (a.u.) for each species"
+    },
+    "VDW_RADIUS": {
+        "type": "float",
+        "description": "VDW_RADIUS defines the cutoff radius (in $\\mathrm{\\AA}$) for the pair interactions used in the DFT-D2 and DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_RADIUS"
+    },
+    "VDW_S6": {
+        "type": "float",
+        "description": "VDW_S6 defines the global scaling factor $s_{6}$ in the DFT-D2 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_S6"
+    },
+    "VDW_S8": {
+        "type": "float",
+        "description": "VDW_S8 defines the damping function parameter $s_{8}$ in the DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_S8"
+    },
+    "VDW_SCALING": {
+        "type": "float",
+        "description": "Global scaling parameter for Grimme's DFT-D2 dispersion"
+    },
+    "VDW_SR": {
+        "type": "float",
+        "description": "VDW_SR defines the damping function parameter $s_{R}$ (or scaling factor) in the DFT-D2 and DFT-D3 method.",
+        "url": "https://www.vasp.at/wiki/index.php/VDW_SR"
+    },
+    "VOSKOWN": {
+        "type": "int",
+        "description": "Determines whether Vosko-Wilk-Nusair interpolation is used or not.",
+        "url": "https://www.vasp.at/wiki/index.php/VOSKOWN"
+    },
+    "WANNIER90_WIN": {
+        "type": "str",
+        "description": "WANNIER90_WIN sets the content of the wannier90.win file.",
+        "url": "https://www.vasp.at/wiki/index.php/WANNIER90_WIN"
+    },
+    "WC": {
+        "type": "float",
+        "description": "WC specifies the weight factor for each step in Broyden mixing scheme (IMIX=4).",
+        "url": "https://www.vasp.at/wiki/index.php/WC"
+    },
+    "WEIMIN": {
+        "type": "float",
+        "description": "WEIMIN specifies the maximum weight for a band to be considered empty.",
+        "url": "https://www.vasp.at/wiki/index.php/WEIMIN"
+    },
+    "WPLASMA": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "WPLASMAI": {
+        "type": "float",
+        "description": "Undocumented parameter"
+    },
+    "ZCT": {
+        "type": "float_array",
+        "description": "? floats | Undocumented charge fitting parameter"
+    },
+    "ZVAL": {
+        "type": "float",
+        "description": "ZVAL describes the valency of each atomic sphere.",
+        "url": "https://www.vasp.at/wiki/index.php/ZVAL"
+    },
+    "Zab_vdW": {
+        "type": "float",
+        "description": "Correlation parameter of rVV10 (LUSE_VDW)",
+        "url": "https://www.vasp.at/wiki/index.php/VdW-DF_functional_of_Langreth_and_Lundqvist_et_al."
+    }
+}
