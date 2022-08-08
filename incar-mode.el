@@ -83,7 +83,7 @@
 
 
 (defvar incar-mode-map
-  (let ((map (copy-keymap special-mode-map)))
+  (let ((map (copy-keymap text-mode-map)))
     (define-key map (kbd "\C-c \C-d") 'incar-tag-lookup)
     map)
   "Keymap for incar-mode.")
